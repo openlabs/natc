@@ -411,7 +411,7 @@ opacity: 1;
 ---------------- */
 .sidebar{
     color: #000;
-    padding-top: 70px;
+    padding-top: 90px;
     background:url(../img/bk_nav.png) none;
 }
 .sidebar .nav a {
@@ -429,14 +429,21 @@ opacity: 1;
 }
 #weather{
     text-align: center;
+    font-family: 'Cabin', sans-serif;
+    border-bottom: 1px solid #333;
 }
 #weather h2{
+    font-size: 2em;
     font-weight: lighter;
+    margin: 0px;
 }
 #weather h3{
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: normal;
+    margin: 0px;
+    padding: 0px
 }
 #weather .temp{
-    font-size: 60px;
+    font-size: 6em;
+    font-weight: lighter;
 }
