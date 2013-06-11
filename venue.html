@@ -61,84 +61,82 @@
         </div>
         <div class="container-fluid">
         <div class="row-fluid">
-          <div class="span3 affix sidebar">
-            <h4><img src="icon/appbar.weather.overcast.png" width="40" />Weather</h4>
+          <div class="sidebar affix span3" data-offset-top="70">
             <div id="weather">
               <h2>Noida</h2>
-              <h3>Haze</h3>
+              <h3><img src="icon/appbar.weather.overcast.png" width="30" /> Haze</h3>
               <div class="temp">&nbsp; 32&deg;</div>
+              <div class="btn-group" data-toggle="buttons-radio">
+                <a class="btn active">12th Thursday</a> <a class="btn">13th Friday</a>
+              </div>
+              <div class="clear"></div><br>
             </div>
             <div class="nav">
-              <a><img src="icon/appbar.directions.png" width="40" />Venue Directions</a>
-              <a><img src="icon/appbar.map.location.png" width="40" />Explore</a>
-              <a><img src="icon/appbar.home.png" width="40" />Nearby Hotel</a>
-              <a><img src="icon/appbar.man.walk.png" width="40" />Getting Around</a>
+              <a href="#venue" class="smooth-scroll"><img src="icon/appbar.directions.png" width="40" />Venue Directions</a>
+              <a href="#explore" class="smooth-scroll"><img src="icon/appbar.map.location.png" width="40" />Explore</a>
+              <a href="#hotel" class="smooth-scroll"><img src="icon/appbar.home.png" width="40" />Nearby Hotel</a>
+              <a href="#around" class="smooth-scroll"><img src="icon/appbar.man.walk.png" width="40" />Getting Around</a>
             </div>
           </div>
-        <div class="span9 pull-right">
-          <div class="row-fluid">
-          <div style="height:100px;"></div>
-
-
-
-<div id="myCarousel" class="carousel slide">
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item">
-      <img src="slider/slide1.jpg" width="2000" alt="">
-    </div>
-    <div class="item">
-      <img src="slider/slide2.jpg" width="2000" alt="">
-    </div>
-    <div class="item">
-      <img src="slider/slide3.jpg" width="2000" alt="">
-    </div>
-  </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-</div>
-
-
-<div class="clear"></div>
-          <section class="why-attend">
-            <div class="center">
-              <p class="row-fluid">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <div class="row-fluid benefits"> 
-              <div class="span3">
-                  <img src="img/why-attend/Gift-Box@2x.png" alt="Gift-Box">
-                  <p>Lorem Ipsum is simply dummy text of the printing and .</p>
+          <div class="span9 pull-right">
+            <div class="row-fluid">
+            <div style="height:100px;"></div>
+            <div id="myCarousel" class="carousel slide">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                <div class="active item">
+                  <img src="slider/slide1.jpg" width="2000" alt="">
+                </div>
+                <div class="item">
+                  <img src="slider/slide2.jpg" width="2000" alt="">
+                </div>
+                <div class="item">
+                  <img src="slider/slide3.jpg" width="2000" alt="">
+                </div>
               </div>
-              <div class="span3">
-                  <img src="img/why-attend/Map@2x.png" alt="Map">
-                  <p>Lorem Ipsum is simply dummy text of the printing and </p>
-
-              </div>
-              <div class="span3">
-                  <img src="img/why-attend/Pensils@2x.png" alt="Pensils">
-                  <p>Lorem Ipsum is simply dummy text of the printing and </p>
-
-              </div>
-              <div class="span3">
-                  <img src="img/why-attend/networking.png" alt="">
-                  <p>Lorem Ipsum is simply dummy text of the printing and </p>
-              </div>
-              </div>
+              <!-- Carousel nav -->
+              <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+              <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
             </div>
-          </section>
-          <section class="location">
-            <div class="center">
-              <h2>Venue Directions</h2>
-              <iframe frameborder="0" scrolling="no" style="width: 100%; height:400px; margin-top: 5px;" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Radisson+blu+Noida&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=59.467068,130.957031&amp;ie=UTF8&amp;hq=Radisson+blu&amp;hnear=Noida,+Gautam+Buddh+Nagar,+Uttar+Pradesh,+India&amp;t=m&amp;ll=28.552038,77.356775&amp;spn=0.039651,0.082204&amp;output=embed"></iframe>
+            <div class="clear"></div>
+            <section class="why-attend">
+              <div class="center">
+                <p class="row-fluid" id="test">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <div class="row-fluid benefits"> 
+                <div class="span3">
+                    <img src="img/why-attend/Gift-Box@2x.png" alt="Gift-Box">
+                    <p>Lorem Ipsum is simply dummy text of the printing and .</p>
+                </div>
+                <div class="span3">
+                    <img src="img/why-attend/Map@2x.png" alt="Map">
+                    <p>Lorem Ipsum is simply dummy text of the printing and </p>
+
+                </div>
+                <div class="span3">
+                    <img src="img/why-attend/Pensils@2x.png" alt="Pensils">
+                    <p>Lorem Ipsum is simply dummy text of the printing and </p>
+
+                </div>
+                <div class="span3">
+                    <img src="img/why-attend/networking.png" alt="">
+                    <p>Lorem Ipsum is simply dummy text of the printing and </p>
+                </div>
+                </div>
+              </div>
+            </section>
+            <section class="location">
+              <div class="center">
+                <h2 id="venue">Venue Directions</h2>
+                <iframe frameborder="0" scrolling="no" style="width: 100%; height:400px; margin-top: 5px;" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Radisson+blu+Noida&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=59.467068,130.957031&amp;ie=UTF8&amp;hq=Radisson+blu&amp;hnear=Noida,+Gautam+Buddh+Nagar,+Uttar+Pradesh,+India&amp;t=m&amp;ll=28.552038,77.356775&amp;spn=0.039651,0.082204&amp;output=embed"></iframe>
+              </div>
+            </section>
             </div>
-          </section>
           </div>
-        </div>
       </div>
       </div>
       </div>
@@ -173,7 +171,7 @@
           </ul>
           <div class="clear"></div>
           <div class="with_love">
-            Made with <i class="icon icon-heart"></i> at <a href="http://openlabs.co.in">Openlabs</a>
+            Made with <a href="http://openlabs.github.io/natc-love"><i class="icon icon-heart"></i></a> at <a href="http://openlabs.co.in">Openlabs</a>
           </div>
         </div>
       </footer>
@@ -199,44 +197,11 @@
     <script type="text/javascript">
     $(function(){
 
-      JBCountDown({
-          secondsColor : "#E67E22",
-          secondsGlow  : "none",
-          
-          minutesColor : "#2ECC71",
-          minutesGlow  : "none",
-          
-          hoursColor   : "#3498DB",
-          hoursGlow    : "none",
-          
-          daysColor    : "#E74C3C",
-          daysGlow     : "none",
-          
-          startDate   : new Date("December 12, 2013 10:00:00").getTime()/1000,
-          endDate     : new Date("December 13, 2013 18:00:00").getTime()/1000,
-          now         : new Date().getTime()/1000,
+      $('.smooth-scroll').click(function(e){
+        console.log(this.hash);
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $(this.hash).offset().top-80 }, 500);
       });
-
-      $('.speakers-pic > .span3 > div.back').hide().css('left', 0);
-      function mySideChange(front) {
-          if (front) {
-              $(this).parent().find('div.front').show();
-              $(this).parent().find('div.back').hide();
-
-          } else {
-              $(this).parent().find('div.front').hide();
-              $(this).parent().find('div.back').show();
-          }
-      }
-
-      $('.speakers-pic > .span3').hover(
-          function () {
-              $(this).find('div').stop().rotate3Di('flip', 250, {direction: 'clockwise', sideChange: mySideChange});
-          },
-          function () {
-              $(this).find('div').stop().rotate3Di('unflip', 500, {sideChange: mySideChange});
-          }
-      );
     });
     </script>
   </body>
