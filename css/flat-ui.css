@@ -426,7 +426,7 @@ textarea {
   font-size: 14px;
 }
 a {
-  color: #16a085;
+  color: #3498DB;
   text-decoration: underline;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
@@ -435,7 +435,7 @@ a {
   -webkit-backface-visibility: hidden;
 }
 a:hover {
-  color: #1abc9c;
+  color: #2980B9;
   text-decoration: none;
 }
 h1 {
