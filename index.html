@@ -19,6 +19,7 @@
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png"> 
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/flat-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
@@ -46,7 +47,7 @@
         </nav>
         <div class="top-logo">
           <a href="">NASSCOM
-            <span class="tag">Annual Technicl Conference</span></a>  
+            <span class="tag">Annual Technical Conference</span></a>  
           </div>
           <nav role="navigation" class="nav-right" style="margin-left: 0px;">
             <ul>
@@ -74,19 +75,67 @@
             <h2>Our Speakers</h2>
             <div class="row-fluid speakers-pic" >
               <div class="span3">
-                <img src="img/speakers/werner.png">
+                <div class="front">
+                  <img src="img/speakers/werner.png">
+                </div>
+                <div class="back">
+                  <div class="content">
+                    Brief Intro
+                  </div>
+                  <div class="links">
+                    <a href="#" class="icon icon-twitter icon-2x"></a>
+                    <a href="#" class="icon icon-linkedin icon-2x"></a><br><br>
+                    <a href="#" class="icon icon-comment btn btn-danger"> Talks</a>
+                  </div>
+                </div>
                 <h4>Dr. Werner Vogels</h4>
               </div>
               <div class="span3">
-                <img src="img/speakers/Larry.png">
+                <div class="front">
+                  <img src="img/speakers/Larry.png">
+                </div>
+                <div class="back">
+                  <div class="content">
+                    Brief Intro
+                  </div>
+                  <div class="links">
+                    <a href="#" class="icon icon-twitter icon-2x"></a>
+                    <a href="#" class="icon icon-linkedin icon-2x"></a><br><br>
+                    <a href="#" class="icon icon-comment btn btn-danger"> Talks</a>
+                  </div>
+                </div>
                 <h4>Larry Page</h4>
               </div>
               <div class="span3">
-                <img src="img/speakers/bill.png">
+                <div class="front">
+                  <img src="img/speakers/bill.png">
+                </div>
+                <div class="back">
+                  <div class="content">
+                    Brief Intro
+                  </div>
+                  <div class="links">
+                    <a href="#" class="icon icon-twitter icon-2x"></a>
+                    <a href="#" class="icon icon-linkedin icon-2x"></a><br><br>
+                    <a href="#" class="icon icon-comment btn btn-danger"> Talks</a>
+                  </div>
+                </div>
                 <h4>Bill Gates</h4>
               </div>
               <div class="span3">
-                <img src="img/speakers/mark.png">
+                <div class="front">
+                  <img src="img/speakers/mark.png">
+                </div>
+                <div class="back">
+                  <div class="content">
+                    Brief Intro
+                  </div>
+                  <div class="links">
+                    <a href="#" class="icon icon-twitter icon-2x"></a>
+                    <a href="#" class="icon icon-linkedin icon-2x"></a><br><br>
+                    <a href="#" class="icon icon-comment btn btn-danger"> Talks</a>
+                  </div>
+                </div>
                 <h4>Mark Zuckerberg </h4>
               </div>
             </div>
@@ -228,6 +277,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/rotate3di.js"></script>
     <script type="text/javascript" src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"></script>
     <script type="text/javascript" charset="utf-8">
       getTwitters('tweets', {
@@ -240,5 +290,30 @@
       });
     </script>
     <script src="js/app.js"></script>
+    <script type="text/javascript">
+    $(function(){
+
+      $('.speakers-pic > .span3 > div.back').hide().css('left', 0);
+      function mySideChange(front) {
+          if (front) {
+              $(this).parent().find('div.front').show();
+              $(this).parent().find('div.back').hide();
+
+          } else {
+              $(this).parent().find('div.front').hide();
+              $(this).parent().find('div.back').show();
+          }
+      }
+
+      $('.speakers-pic > .span3').hover(
+          function () {
+              $(this).find('div').stop().rotate3Di('flip', 250, {direction: 'clockwise', sideChange: mySideChange});
+          },
+          function () {
+              $(this).find('div').stop().rotate3Di('unflip', 500, {sideChange: mySideChange});
+          }
+      );
+    });
+    </script>
   </body>
   </html>

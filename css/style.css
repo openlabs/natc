@@ -13,10 +13,16 @@ color: #34495e;
 --------------------------*/
 
 .btn.btn-danger {
-  background-color:#98012e;
+  background-color: #E74C3C;
 }
 .btn.btn-danger:hover{
-background-color:rgb(187, 77, 110);
+background-color: #C0392B;
+}
+.btn.btn-success {
+  background-color: #2ECC71;
+}
+.btn.btn-success:hover{
+background-color: #27AE60;
 }
 /*  TOP NAVIGATION
 --------------------------*/
@@ -105,7 +111,7 @@ a.menu-link,a.menu-link:visited {
 .top-logo {
     /*position:absolute;*/
     top:0;
-    background:url(../img/bk_but_ticket.png);
+    background: #E74C3C;
     border-radius:0 0 6px 6px;
     box-shadow:0 0 4px #000;
     text-align:center;
@@ -385,4 +391,18 @@ opacity: 1;
         display: block;
         text-align: left;
     }
+}
+
+.speakers-pic .content{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.speakers-pic .links{
+    text-align: center;
+}
+
+.speakers-pic > .span3 div.back{
+    width: 270px;
+    height: 190px;
 }
