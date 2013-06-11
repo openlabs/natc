@@ -8,6 +8,7 @@
   <meta name="author" content="">
   <!-- Le styles -->
   <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/jbclock.css" type="text/css" media="all" />
   <link href="css/bootstrap-responsive.css" rel="stylesheet">
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -62,11 +63,45 @@
             <div class="row-fluid center">
               <h1 class="nasscom-logo ">NASSCOM
                 <span class="tag"><strong>Annual Technology Conference</strong></span>
-                <span class="fade-date"><strong>JUNE 22, 2013,</strong> NOIDA, INDIA</span>
+                <span class="fade-date"><strong>12 - 13, December, 2013</strong> NOIDA, INDIA</span>
               </h1>
-              <h2 class="intro">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-              </h2>
+
+      <div class="clock_wrapper">
+        <div class="wrapper" style="margin-top:150px;">
+              <div class="clock">
+                
+                  <div class="clock_days">
+                      <canvas id="canvas_days" height="190px" width="190px" id="canvas_days"></canvas>
+                      <div class="text">
+                          <p class="val">0</p>
+                          <p class="type_days">Days</p>
+                      </div>
+                  </div>
+                  <div class="clock_hours">
+                      <canvas height="190px" width="190px" id="canvas_hours"></canvas>
+                      <div class="text">
+                          <p class="val">0</p>
+                          <p class="type_hours">Hours</p>
+                      </div>
+                  </div>
+                  <div class="clock_minutes">
+                      <canvas height="190px" width="190px" id="canvas_minutes"></canvas>
+                      <div class="text">
+                          <p class="val">0</p>
+                          <p class="type_minutes">Minutes</p>
+                      </div>
+                  </div>
+                  <div class="clock_seconds">
+                      <canvas height="190px" width="190px" id="canvas_seconds"></canvas>
+                      <div class="text">
+                          <p class="val">0</p>
+                          <p class="type_seconds">Seconds</p>
+                      </div>
+                  </div>
+                  
+              </div><!--/clock -->
+        </div>
+      </div>
             </div>    
           </div>
         </header>
@@ -277,6 +312,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jbclock.js"></script>
     <script type="text/javascript" src="js/rotate3di.js"></script>
     <script type="text/javascript" src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"></script>
     <script type="text/javascript" charset="utf-8">
@@ -292,6 +328,24 @@
     <script src="js/app.js"></script>
     <script type="text/javascript">
     $(function(){
+
+      JBCountDown({
+          secondsColor : "#E67E22",
+          secondsGlow  : "none",
+          
+          minutesColor : "#2ECC71",
+          minutesGlow  : "none",
+          
+          hoursColor   : "#3498DB",
+          hoursGlow    : "none",
+          
+          daysColor    : "#E74C3C",
+          daysGlow     : "none",
+          
+          startDate   : new Date("December 12, 2013 10:00:00").getTime()/1000,
+          endDate     : new Date("December 13, 2013 18:00:00").getTime()/1000,
+          now         : new Date().getTime()/1000,
+      });
 
       $('.speakers-pic > .span3 > div.back').hide().css('left', 0);
       function mySideChange(front) {

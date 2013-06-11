@@ -150,7 +150,7 @@ padding-top: 115px;
 width: 100%;
 text-align: center;
 z-index: 100;
-background: url(../img/banner.png) 50% 80% no-repeat;
+background: #efefef;
 padding-bottom: 20px;
 top: 0;
 background-color: rgb(254, 255, 240);
@@ -160,7 +160,7 @@ border-bottom: 2px solid #EFF8FB;
 .logo, .nasscom-logo {
 font-size: 70px;
 font-weight: 900;
-color: #98012e;
+color: #E74C3C;
 text-shadow: 1px 1px #fff, 0 0 0 #000, 1px 1px #fff;
 line-height: 1;
 margin: 15px 0 110px;
@@ -179,7 +179,7 @@ line-height: 1.2;
     margin-top: 10px;
     font-size: 16px;
     font-weight: 300;
-    color: #34495E;
+    color: #7F8C8D;
     line-height: 1;
 
 }
