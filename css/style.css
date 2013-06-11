@@ -413,7 +413,7 @@ opacity: 1;
 .sidebar{
     color: #000;
     padding-top: 90px;
-    background:url(../img/bk_nav.png) none;
+    background:#fff;
 }
 .sidebar .nav a {
   display: block;
@@ -473,6 +473,7 @@ footer li{
     text-align: right;
     font-size: 1.3em;
     padding-right: 10px;
+    padding-top: 20px;
 }
 .with_love i{
     color: #E74C3C;
@@ -487,4 +488,6 @@ footer li.heading{
     font-weight: bold;
     padding-bottom: 10px;
     color: #3498DB;
+}
+.icon-outline{
 }
