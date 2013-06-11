@@ -1,0 +1,92 @@
+.clock_wrapper .clock_days { 
+    background-image:url("../img/timer_bg.png");
+    width:190px;
+    height:190px;
+    background-repeat: no-repeat;
+    float:left;
+    margin-right: 30px;
+    position: relative;
+}
+.clock_wrapper .clock_hours { 
+    background-image:url("../img/timer_bg.png");
+    width:190px;
+    height:190px;
+    background-repeat: no-repeat;
+    float:left;
+    margin-right: 30px;
+    position: relative;
+}
+.clock_wrapper .clock_minutes { 
+    background-image:url("../img/timer_bg.png");
+    width:190px;
+    height:190px;
+    background-repeat: no-repeat;
+    float:left;
+    margin-right: 30px;
+    position: relative;
+}
+.clock_wrapper .clock_seconds {
+    background-image:url("../img/timer_bg.png");
+    width:190px;
+    height:190px;
+    background-repeat: no-repeat;
+    float:left;
+    position: relative;
+}
+
+.clock_wrapper .wrapper {
+	width:960px;
+	margin:0 auto;
+}
+
+.clock_wrapper .wrapper p {
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#999;
+	line-height:40px;
+}
+
+.clock_wrapper .wrapper a {
+	color:#36F;
+	text-decoration:none;
+}
+
+.clock_wrapper .wrapper a:hover {
+	color:#000;
+}
+
+.clock_wrapper .clock {
+	width:850px;
+	height:190px;
+        margin:0 auto;
+        margin-top:50px;
+}
+
+
+.clock_wrapper .text {
+    position: absolute;
+    width:100%;
+    top:65px;
+    left:0;
+}
+.clock_wrapper .text .val {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color:#616161;
+    font-weight: bold;
+}
+
+.clock_wrapper .text .type_days,
+.clock_wrapper .text .type_hours,
+.clock_wrapper .text .type_minutes,
+.clock_wrapper .text .type_seconds
+{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:#aeaeae;
+    font-weight: bold;
+    text-transform: uppercase;
+}
