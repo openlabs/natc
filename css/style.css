@@ -151,10 +151,9 @@ padding-top: 115px;
 width: 100%;
 text-align: center;
 z-index: 100;
-background: #efefef;
 padding-bottom: 20px;
 top: 0;
-background-color: rgb(254, 255, 240);
+background: url('../img/banner.png') center no-repeat; #efefef;
 border-bottom: 2px solid #EFF8FB;
 }
 
@@ -411,26 +410,33 @@ opacity: 1;
 /* SIDEBAR
 ---------------- */
 .sidebar{
-    position: fixed;
-    height: 100%;
-    left:0px;
-    color: #FFF;
-    padding: 50px 0px;
-    margin-left: 0px;
-    background:url(../img/bk_nav.png);
+    color: #000;
+    padding-top: 70px;
+    background:url(../img/bk_nav.png) none;
 }
 .sidebar .nav a {
   display: block;
-  padding: 0.8em;
-  color: #fff;
+  padding: 0.8em;   
+  color: #000;
   border-bottom: 1px solid #333;
   text-transform:uppercase;
   text-decoration: none;
   cursor: pointer;
 }
 .sidebar .nav a:hover{
-  color: #fff;
-  background-color: #404040;
+   color: #000;
+  background-color: #ECF0F1;
 }
 #weather{
+    text-align: center;
+}
+#weather h2{
+    font-weight: lighter;
+}
+#weather h3{
+    font-size: 1.5em;
+    font-weight: normal;
+}
+#weather .temp{
+    font-size: 60px;
 }
