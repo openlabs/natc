@@ -1,0 +1,388 @@
+body {
+font-size: 1em;
+line-height: 1.4;
+font-weight: 400;
+color: #34495e;
+}
+
+.center{
+    text-align: center;
+}
+
+/*  Nasscom buttons
+--------------------------*/
+
+.btn.btn-danger {
+  background-color:#98012e;
+}
+.btn.btn-danger:hover{
+background-color:rgb(187, 77, 110);
+}
+/*  TOP NAVIGATION
+--------------------------*/
+
+.top-bar {
+    background:url(../img/bk_nav.png) 0 100% repeat-x;
+    text-align: center;
+    height:64px;
+    text-transform:uppercase;
+    position:fixed;
+    top:0;
+    z-index:103;
+    width:100%;
+
+}
+
+nav.mobile-menu{
+    display:none;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+
+}
+
+nav.nav-left {
+    position:absolute;
+    right:50%;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    top:0;
+}
+
+nav.nav-right {
+    position:absolute;
+    left:50%;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    top:0;
+}
+
+nav ul {
+    padding:20px 0 0 0;
+}
+
+nav ul li {
+    display:inline-block;
+    text-align:center;
+    padding:0 30px;
+}
+
+.footer-nav ul li {
+    padding:0 20px;
+}
+
+nav a, nav a:visited {
+    opacity:0.8;
+    -webkit-transition:opacity 0.2s;
+    -moz-transition:opacity 0.2s;
+    transition:opacity 0.2s;
+    color:#fff;
+}
+nav a{
+    text-decoration:none;
+}
+nav a:hover {
+    text-decoration:none;
+    opacity:1;
+}
+
+a.menu-link {
+    display:none;
+    position:relative;
+    z-index:1000;
+    text-transform:uppercase;
+    color:#fff;
+    font-weight:700;
+    padding:0.7em 1em;
+}
+
+a.menu-link,a.menu-link:visited {
+    text-decoration:none;
+}
+
+.top-logo {
+    /*position:absolute;*/
+    top:0;
+    background:url(../img/bk_but_ticket.png);
+    border-radius:0 0 6px 6px;
+    box-shadow:0 0 4px #000;
+    text-align:center;
+    padding:15px;
+    color:#fff;
+    font-weight:700;
+    font-size:1.5em;
+    line-height:1.2;
+    vertical-align: middle;
+    width:180px;
+    display:inline-block;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    display:none;
+}
+
+.top-logo a {
+    color:#fff;
+    text-decoration:none;
+}
+
+.top-logo span {
+    font-size:0.5em;
+    font-weight:400;
+    display:block;
+    text-shadow:1px 1px #CC2A48;
+}
+
+
+/*  HEADER BANNER
+--------------------------*/
+
+header {
+padding-top: 115px;
+width: 100%;
+text-align: center;
+z-index: 100;
+background: url(../img/banner.png) 50% 80% no-repeat;
+padding-bottom: 20px;
+top: 0;
+background-color: rgb(254, 255, 240);
+border-bottom: 2px solid #EFF8FB;
+}
+
+.logo, .nasscom-logo {
+font-size: 70px;
+font-weight: 900;
+color: #98012e;
+text-shadow: 1px 1px #fff, 0 0 0 #000, 1px 1px #fff;
+line-height: 1;
+margin: 15px 0 110px;
+position: relative;
+z-index: 100;
+}
+.nasscom-logo span.tag{
+display: block;
+font-size: 45px;
+font-weight: 400;
+color: #2C3E50;
+line-height: 1.2;
+}
+.nasscom-logo span.fade-date{
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #34495E;
+    line-height: 1;
+
+}
+.intro{
+display: block;
+font-weight:300;
+font-size: 25px;
+}
+
+
+/*  Speakers
+--------------------------*/
+.speakers, .why-attend, .blog, .sponsors{
+    padding:40px; 
+    border-bottom: 2px solid #EFF8FB;
+}
+.speakers h2, .why-attend h2, .blog h2, .sponsors h2{
+    padding-bottom: 30px;
+    font-size: 45px;
+}
+.speakers-pic{
+    padding: 30px 0;
+}
+
+/*  Why attend  */
+
+.benefits img{
+    margin-top: 10px;
+    width: 150px;
+}
+.benefits p{
+    margin-top: 10px;
+}
+.benefits .span3{
+    padding: 20px;
+}
+.why-attend p{
+    font-size: 19px;
+}
+
+
+/*  Blog Styles
+--------------------------*/
+a.blog-post{
+    padding: 10px;
+    border-bottom: 2.5px solid rgb(230, 230, 230);
+    text-decoration: none;
+}
+p.blog-desciption{
+    color: #34495e;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 20px;
+    text-overflow:ellipsis;
+}
+.post-date{
+    padding-top: 5px;
+    color: #95A5A6;
+}
+
+h3.post-title{
+    font-size: 26px;
+    color: #2C3E50;
+    line-height: 30px;
+    white-space: nowrap;
+    font-style: italic;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+#tweets{
+    padding:20px;
+}
+.social-tweets{
+   padding: 50px 0;
+}
+#tweets ul{
+margin-left:0px;}
+
+#tweets ul li{
+    list-style: none;
+}
+.recent-tweet p{
+    font-size: 19px;
+    line-height: 28px;
+
+}
+.recent-tweet p a{
+    color:#7F8C8D;
+}
+.timestamp a{
+    text-decoration: none;
+    color:#7F8C8D;
+}
+p.timestamp span{
+    padding-left: 25px;
+    background: url(../img/time.png) center left no-repeat;
+}
+
+
+
+/*  Sponsors 
+--------------------------*/
+
+#sponsors-img{
+    padding: 30px 0;
+}
+
+#sponsors-img img{
+    width: 220px;
+    padding: 10px 0;
+    -webkit-filter: grayscale(90%);
+    filter: gray;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+    opacity: 0.6;
+}
+
+#sponsors-img img:hover {
+-webkit-filter: grayscale(0%);
+filter: none;
+opacity: 1;
+}
+
+
+
+/*  MEDIA QUERIES
+--------------------------*/
+
+@media screen and (max-width: 1024px) {
+
+    nav ul li {
+        font-size:0.9em;
+        padding:0 19px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+
+    .top-bar{
+        position:absolute;
+        height:45px;
+    }
+
+
+    .logo {
+        margin-bottom:50px;
+    }
+
+    .nav-left, .nav-right, .top-logo {
+        display:none;
+    }
+
+    .wrapper.active {
+        left: 15em;
+        position:relative;
+    }
+    a.menu-link {
+        float: left;
+        display: block;
+    }
+    nav.mobile-menu {
+      display:block;
+      clear: both;
+      overflow: hidden;
+      background:#111;
+      box-shadow:1px 0 3px #ccc;
+    }
+    .js nav.mobile-menu {
+      width: 15em;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -15em;
+    }
+    nav.mobile-menu ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav.mobile-menu li {
+        display:block;
+        text-align: left;
+    }
+    nav.mobile-menu li a {
+      display: block;
+      padding: 0.8em;
+      color: #fff;
+      border-bottom: 1px solid #333;
+      text-transform:uppercase;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 600px) {
+    .logo {
+        font-size:65px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size:50px;
+        margin-bottom:20px;
+    }
+
+}
+@media screen and (max-width: 740px){
+    nav.mobile-menu li {
+        display: block;
+        text-align: left;
+    }
+}
