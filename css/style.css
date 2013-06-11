@@ -1,5 +1,6 @@
 body {
 font-size: 1em;
+padding: 0px;
 line-height: 1.4;
 font-weight: 400;
 color: #34495e;
@@ -405,4 +406,31 @@ opacity: 1;
 .speakers-pic > .span3 div.back{
     width: 270px;
     height: 190px;
+}
+
+/* SIDEBAR
+---------------- */
+.sidebar{
+    position: fixed;
+    height: 100%;
+    left:0px;
+    color: #FFF;
+    padding: 50px 0px;
+    margin-left: 0px;
+    background:url(../img/bk_nav.png);
+}
+.sidebar .nav a {
+  display: block;
+  padding: 0.8em;
+  color: #fff;
+  border-bottom: 1px solid #333;
+  text-transform:uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+.sidebar .nav a:hover{
+  color: #fff;
+  background-color: #404040;
+}
+#weather{
 }
