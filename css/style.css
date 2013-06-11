@@ -13,10 +13,16 @@ color: #34495e;
 --------------------------*/
 
 .btn.btn-danger {
-  background-color:#98012e;
+  background-color: #E74C3C;
 }
 .btn.btn-danger:hover{
-background-color:rgb(187, 77, 110);
+background-color: #C0392B;
+}
+.btn.btn-success {
+  background-color: #2ECC71;
+}
+.btn.btn-success:hover{
+background-color: #27AE60;
 }
 /*  TOP NAVIGATION
 --------------------------*/
@@ -105,7 +111,7 @@ a.menu-link,a.menu-link:visited {
 .top-logo {
     /*position:absolute;*/
     top:0;
-    background:url(../img/bk_but_ticket.png);
+    background: #E74C3C;
     border-radius:0 0 6px 6px;
     box-shadow:0 0 4px #000;
     text-align:center;
@@ -144,7 +150,7 @@ padding-top: 115px;
 width: 100%;
 text-align: center;
 z-index: 100;
-background: url(../img/banner.png) 50% 80% no-repeat;
+background: #efefef;
 padding-bottom: 20px;
 top: 0;
 background-color: rgb(254, 255, 240);
@@ -154,7 +160,7 @@ border-bottom: 2px solid #EFF8FB;
 .logo, .nasscom-logo {
 font-size: 70px;
 font-weight: 900;
-color: #98012e;
+color: #E74C3C;
 text-shadow: 1px 1px #fff, 0 0 0 #000, 1px 1px #fff;
 line-height: 1;
 margin: 15px 0 110px;
@@ -173,7 +179,7 @@ line-height: 1.2;
     margin-top: 10px;
     font-size: 16px;
     font-weight: 300;
-    color: #34495E;
+    color: #7F8C8D;
     line-height: 1;
 
 }
@@ -385,4 +391,18 @@ opacity: 1;
         display: block;
         text-align: left;
     }
+}
+
+.speakers-pic .content{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.speakers-pic .links{
+    text-align: center;
+}
+
+.speakers-pic > .span3 div.back{
+    width: 270px;
+    height: 190px;
 }
