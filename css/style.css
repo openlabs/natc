@@ -4,6 +4,7 @@ padding: 0px;
 line-height: 1.4;
 font-weight: 400;
 color: #34495e;
+cursor: default;
 }
 
 .center{
@@ -446,4 +447,44 @@ opacity: 1;
 #weather .temp{
     font-size: 6em;
     font-weight: lighter;
+}
+
+
+/* FOOTER
+---------------------- */
+footer div.bar{
+    background: url(../img/bar_back.png) repeat-x bottom #fff;
+    text-align: right;
+    padding-right: 10em;
+}
+footer div.inner{
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+footer li{
+    font-size: 1.1em;
+    list-style: none;
+    padding-bottom: 2px;
+}
+.clear{
+    clear: both;
+}
+.with_love{
+    text-align: right;
+    font-size: 1.3em;
+    padding-right: 10px;
+}
+.with_love i{
+    color: #E74C3C;
+}
+.with_love a:hover {
+  color: #E74C3C;
+}
+footer a{
+    font-weight: normal;
+}
+footer li.heading{
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #3498DB;
 }
