@@ -427,7 +427,7 @@ textarea {
 }
 a {
   color: #3498DB;
-  text-decoration: underline;
+  text-decoration: none;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
@@ -2979,7 +2979,7 @@ footer {
   padding: 0;
 }
 footer a {
-  color: #9aa4af;
+  color: #8C8C8C;
   font-weight: 700;
 }
 footer p {

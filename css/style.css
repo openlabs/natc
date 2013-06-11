@@ -4,6 +4,7 @@ padding: 0px;
 line-height: 1.4;
 font-weight: 400;
 color: #34495e;
+cursor: default;
 }
 
 .center{
@@ -151,10 +152,9 @@ padding-top: 115px;
 width: 100%;
 text-align: center;
 z-index: 100;
-background: #efefef;
 padding-bottom: 20px;
 top: 0;
-background-color: rgb(254, 255, 240);
+background: url('../img/banner.png') center no-repeat; #efefef;
 border-bottom: 2px solid #EFF8FB;
 }
 
@@ -411,26 +411,83 @@ opacity: 1;
 /* SIDEBAR
 ---------------- */
 .sidebar{
-    position: fixed;
-    height: 100%;
-    left:0px;
-    color: #FFF;
-    padding: 50px 0px;
-    margin-left: 0px;
-    background:url(../img/bk_nav.png);
+    color: #000;
+    padding-top: 90px;
+    background:#fff;
 }
 .sidebar .nav a {
   display: block;
-  padding: 0.8em;
-  color: #fff;
+  padding: 0.8em;   
+  color: #000;
   border-bottom: 1px solid #333;
   text-transform:uppercase;
   text-decoration: none;
   cursor: pointer;
 }
 .sidebar .nav a:hover{
-  color: #fff;
-  background-color: #404040;
+   color: #000;
+  background-color: #ECF0F1;
 }
 #weather{
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    border-bottom: 1px solid #333;
+}
+#weather h2{
+    font-size: 2em;
+    font-weight: lighter;
+    margin: 0px;
+}
+#weather h3{
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px
+}
+#weather .temp{
+    font-size: 6em;
+    font-weight: lighter;
+}
+
+
+/* FOOTER
+---------------------- */
+footer div.bar{
+    background: url(../img/bar_back.png) repeat-x bottom #fff;
+    text-align: right;
+    padding-right: 10em;
+}
+footer div.inner{
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+footer li{
+    font-size: 1.1em;
+    list-style: none;
+    padding-bottom: 2px;
+}
+.clear{
+    clear: both;
+}
+.with_love{
+    text-align: right;
+    font-size: 1.3em;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+.with_love i{
+    color: #E74C3C;
+}
+.with_love a:hover {
+  color: #E74C3C;
+}
+footer a{
+    font-weight: normal;
+}
+footer li.heading{
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #3498DB;
+}
+.icon-outline{
 }
