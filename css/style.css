@@ -113,9 +113,9 @@ a.menu-link,a.menu-link:visited {
 .top-logo {
     /*position:absolute;*/
     top:0;
-    background: #E74C3C;
+    /*background: #E74C3C;
     border-radius:0 0 6px 6px;
-    box-shadow:0 0 4px #000;
+    box-shadow:0 0 4px #000;*/
     text-align:center;
     padding:15px;
     color:#fff;
@@ -125,12 +125,14 @@ a.menu-link,a.menu-link:visited {
     vertical-align: middle;
     width:180px;
     display:inline-block;
+    -webkit-transform: scale(1); display: inline-block;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
     display:none;
 }
-
+.top-logo img{
+}
 .top-logo a {
     color:#fff;
     text-decoration:none;
