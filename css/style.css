@@ -450,6 +450,13 @@ opacity: 1;
     font-size: 6em;
     font-weight: lighter;
 }
+#weather .btn{
+    color: #000000;
+}
+#weather .btn.active{
+    background: #222222;
+    color: #FFFFFF;
+}
 
 
 /* FOOTER
