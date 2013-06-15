@@ -6,7 +6,9 @@ font-weight: 400;
 color: #34495e;
 cursor: default;
 }
-
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
 .center{
     text-align: center;
 }
@@ -14,6 +16,15 @@ cursor: default;
 /*  Nasscom buttons
 --------------------------*/
 
+#register-button{
+    position: fixed;
+    top: 14px;
+    right:5%;
+    z-index: 9999;
+}
+  #register-button .btn{
+    padding: 5px 10px 7px;
+}
 .btn.btn-danger {
   background-color: #E74C3C;
 }
@@ -196,7 +207,7 @@ font-size: 25px;
 /*  Speakers
 --------------------------*/
 .speakers, .why-attend, .blog, .sponsors{
-    padding:40px; 
+    padding:40px 0; 
     border-bottom: 2px solid #EFF8FB;
 }
 .speakers h2, .why-attend h2, .blog h2, .sponsors h2{
@@ -394,6 +405,9 @@ opacity: 1;
         display: block;
         text-align: left;
     }
+    #register-button{
+       top: 5px;
+    }
 }
 
 .speakers-pic .content{
@@ -457,6 +471,91 @@ opacity: 1;
     background: #222222;
     color: #FFFFFF;
 }
+
+/* Schedule Page
+---------------------- */
+.box-inside{
+    margin-top: 50px;
+    padding:40px;
+}
+.schedule h2{
+    font-size: 30px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #BDC3C7;
+    margin-bottom: 10px;
+}
+.schedule ul.nav{
+    list-style: none;
+}
+.schedule ul.nav li{
+    display: inline-block;
+}
+.schedule ul.nav li >a {
+    padding: 5px 8px;
+    border-radius: 4px;
+    color:#34495e;
+    font-size: 18px;
+}
+#schedule-table thead {
+    background: #2C3E50;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+#schedule-table thead tr :first-child{
+    font-size: 17px;
+    min-width: 320px;
+    max-width: 320px;
+
+}
+#schedule-table thead tr th{
+    text-align: center;
+}
+#schedule-table thead tr th{
+    max-width: 60px;
+    min-width: 60px;
+} 
+#schedule-table tbody tr td{
+    text-align: center;
+}
+#schedule-table .media{
+    float: left;
+}
+#schedule-table .media img{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+} 
+
+h4.table-speaker{
+    color: #34495E;
+    font-size: 17px;
+    margin-left: -10px;
+}
+
+
+#schedule-table img{
+    width: 100px;
+    float: left;
+}
+a.social-icons{
+    margin-top: 10px;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+}
+a.facebook{
+    background: url(../img/social-icons/facebook.png) no-repeat;
+}
+a.twitter{
+    background: url(../img/social-icons/twitter.png) no-repeat;
+}
+a.gplus{
+    background: url(../img/social-icons/google+.png) no-repeat;
+}
+a.linkedin{
+    background: url(../img/social-icons/linkedin.png) no-repeat;
+}
+
 
 
 /* FOOTER
