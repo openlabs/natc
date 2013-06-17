@@ -210,13 +210,14 @@ font-size: 25px;
     padding:40px 0; 
     border-bottom: 2px solid #EFF8FB;
 }
-.speakers h2, .why-attend h2, .blog h2, .sponsors h2{
+.speakers h2, .why-attend h2, .blog h2, .sponsors h2, h2.main-heading {
     padding-bottom: 30px;
     font-size: 45px;
 }
 .speakers-pic{
     padding: 30px 0;
 }
+
 
 /*  Why attend  */
 
@@ -522,9 +523,34 @@ opacity: 1;
 }
 #schedule-table .media img{
     margin-right: 10px;
-    margin-bottom: 5px;
+    width: 50px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
     text-align: center;
-} 
+}
+.cloud_color:hover, .bigdata_color, .mobile_color{
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    z-index: 9999;
+}
+.bigdata_color{
+    background: #F5DA81 url(../img/bigdata_bg.png) no-repeat 97% 50%;
+}
+.mobile_color{
+    background: #9B59B6 url(../img/mobile_bg.png) no-repeat 95% 50%;
+}
+.cloud_color{
+    background: #3498DB url(../img/cloud_bg.png) no-repeat 97% 50%;
+    box-shadow: 
+
+}
+.workshop_color{
+    background: #E74C3C url(../img/workshop_bg.png) no-repeat 97% 50%;
+}
+td .media-body{
+    color: white;
+}
 
 h4.table-speaker{
     color: #34495E;
@@ -556,7 +582,20 @@ a.linkedin{
     background: url(../img/social-icons/linkedin.png) no-repeat;
 }
 
+/* Speakers Page */
 
+.zigzag-box{
+    padding:80px 0;
+    background: url(../img/section-bg.jpg) no-repeat center bottom;
+    border-bottom: 1px solid #eee;
+}
+.zigzag-box .media-object{
+    padding:0 20px;
+}
+
+span.linedin-follow{
+    margin-right: 10px;
+}
 
 /* FOOTER
 ---------------------- */
