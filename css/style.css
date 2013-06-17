@@ -586,17 +586,37 @@ a.linkedin{
 
 .zigzag-box{
     padding:80px 0;
-    background: url(../img/section-bg.jpg) no-repeat center bottom;
-    border-bottom: 1px solid #eee;
 }
 .zigzag-box .media-object{
     padding:0 20px;
 }
+.zigzag-box  .media{
+    padding: 30px 0 30px 0;
+}
 
+.border{
+    background: url(../img/section-bg.jpg) no-repeat center bottom;
+}
+
+h5.sessions{
+margin:2px 0;
+}
 span.linedin-follow{
     margin-left: 10px;
 }
-
+.session-list li a{
+    color: #2C3E50;
+    font-size: 14px;
+}
+.filter-speaker li, .filter-speaker li a{
+    color:#E74C3C;
+    font-size:18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.filter-speaker li a:hover{
+text-decoration: underline;
+}
 /* FOOTER
 ---------------------- */
 footer div.bar{
