@@ -593,6 +593,16 @@ a.linkedin{
 .zigzag-box  .media{
     padding: 30px 0 30px 0;
 }
+.content-box{
+    padding:80px 0;
+}
+.sponsors-box{
+    padding:30px 0; 
+}
+.sponsors-box img{
+    max-width: 350px;
+    padding: 10px;
+}
 
 .border{
     background: url(../img/section-bg.jpg) no-repeat center bottom;
@@ -617,6 +627,33 @@ span.linedin-follow{
 .filter-speaker li a:hover{
 text-decoration: underline;
 }
+
+
+/* Sponsors Images 
+---------------------- */
+
+.sponsors-box img{
+    -webkit-filter: grayscale(90%);
+  -moz-filter: grayscale(90%);
+  -ms-filter: grayscale(90%);
+  -o-filter: grayscale(90%);
+  filter: grayscale(90%);
+  filter: url(grayscale.svg#greyscale); /* Firefox 4+ */
+  filter: gray;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+    opacity: 0.6;
+}
+.sponsors-box img:hover{
+-webkit-filter: grayscale(0%);
+filter: none;
+opacity: 1;
+}
+
+
+
 /* FOOTER
 ---------------------- */
 footer div.bar{
