@@ -638,7 +638,7 @@ a.linkedin{
     padding:30px 0; 
 }
 .sponsors-box img{
-    max-width: 350px;
+    max-width: 310px;
     padding: 10px;
 }
 
@@ -670,11 +670,11 @@ text-decoration: underline;
 ---------------------- */
 .sponsors-box img{
     -webkit-filter: grayscale(90%);
-  -moz-filter: grayscale(90%);
-  -ms-filter: grayscale(90%);
-  -o-filter: grayscale(90%);
-  filter: grayscale(90%);
-  filter: gray;
+    -moz-filter: grayscale(90%);
+    -ms-filter: grayscale(90%);
+    -o-filter: grayscale(90%);
+    filter: grayscale(90%);
+    filter: gray;
     -webkit-transition: all 1s ease-in;
     -moz-transition: all 1s ease-in;
     -o-transition: all 1s ease-in;
