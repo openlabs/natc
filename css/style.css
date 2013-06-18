@@ -473,7 +473,7 @@ opacity: 1
 }
 .sidebar .nav a {
   display: block;
-  padding: 0.8em;   
+  padding: 0.1em 0.8em;
   color: #000;
   border-bottom: 1px solid #333;
   text-transform:uppercase;
