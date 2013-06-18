@@ -15,7 +15,7 @@ $(document).ready(function(){
       $(window).on('resize scroll', function() {
         var scroll_top = $(window).scrollTop();
         var sticky_offset_top = 0;
-        var sticky_offset_bottom = 314;
+        var sticky_offset_bottom = 180;
         sticky_offset_bottom = $(document).height() - sticky_offset_bottom - $(".my-affix").height();
         console.log(sticky_offset_bottom);
         if (scroll_top > sticky_offset_top && scroll_top < sticky_offset_bottom ) {
