@@ -346,23 +346,20 @@ p.timestamp span{
 #sponsors-img img{
     width: 220px;
     padding: 10px 0;
-    -webkit-filter: grayscale(90%);
+    -webkit-filter: grayscale(100%);
+    -moz-fliter: grayscale(100);
     filter: gray;
-    -webkit-transition: all 1s ease-in;
-    -moz-transition: all 1s ease-in;
-    -o-transition: all 1s ease-in;
-    transition: all 1s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
     opacity: 0.6;
 }
-
 #sponsors-img img:hover {
 -webkit-filter: grayscale(0%);
 filter: none;
-opacity: 1;
+opacity: 1
 }
-
-
-
 /*  MEDIA QUERIES
 --------------------------*/
 
@@ -677,7 +674,6 @@ text-decoration: underline;
   -ms-filter: grayscale(90%);
   -o-filter: grayscale(90%);
   filter: grayscale(90%);
-  filter: url(grayscale.svg#greyscale); /* Firefox 4+ */
   filter: gray;
     -webkit-transition: all 1s ease-in;
     -moz-transition: all 1s ease-in;
