@@ -186,12 +186,11 @@ a.menu-link,a.menu-link:visited {
 }
 
 .top-logo img{
-    position: absolute;
+    position: fixed;
     height: 100px;
     width: 100px;
     margin-top: -60px;
 }
- 
 
 /*  HEADER BANNER
 --------------------------*/
