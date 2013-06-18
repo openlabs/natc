@@ -27,9 +27,6 @@
   <body>
     <div class="wrapper">
       <!--Navigation for mobile-->
-      <div  id="register-button">
-        <a href="" class="btn btn-mini btn-danger" >Register</a>
-      </div>
       <a href="#menu" class="menu-link">Menu</a>
       <nav role="navigation" class="mobile-menu">
         <ul>
@@ -42,38 +39,32 @@
         </ul>
       </nav>
       <!--Desktop Navs -->
-      <div class="top-bar">
-        <div class="top-logo" style="display: inline-block; scale: 1">
-          <a href=""><img src="img/natc-logo-red.png" width="130" /></a>  
-        </div>
-        <nav role="navigation" class="nav-left" style="margin-right: 50px" >
+       <div class="top-bar">
+        <nav role="navigation" style="margin: 30px 50px 0 0;" >
           <ul>
-            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="#" class="top-logo"><img src="img/natc-logo-red.png" /></a></li>
+            <li><a href="">Schedule</a></li>
             <li><a href="">Speakers</a></li>
             <li><a href="">Sponsors</a></li>
-          </ul>
-        </nav>
-        <nav role="navigation" class="nav-right" style="margin-left: 20px">
-          <ul>
             <li><a href="venue.html">Venue</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Blog</a></li>
+            <li><a class="nav-margin"></a></li>
+            <li><a class="register-btn"><i class="icon-edit"></i> Register</a></li>
+            <li>
+              <div class="top-top-bar">
+                <a class="icon-twitter" href="#"></a>
+                <a class="icon-linkedin" href="#"></a>
+                <a class="icon-facebook" href="#"></a>
+                <a class="icon-rss" href="#"></a>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>
       <header role="banner border">
         <div class="flexslider">
           <ul class="slides">
-            <li>
-              <div class="container">
-                <div class="row-fluid center ">
-                  <h1 class="nasscom-logo "><br>NASSCOM
-                    <span class="tag"><strong>Annual Technology Conference</strong></span>
-                    <span class="fade-date"><strong>12 - 13, December, 2013</strong> NOIDA, INDIA</span>
-                  </h1>
-                </div>
-              </div>
-            </li>
             <li>
               <img src="img/slider/slider1.png">
             </li>
@@ -319,41 +310,27 @@
         </div>
       </section>
     </div>
-    <footer style="background: #fff;">
-      <div class="bar">
-        <img src="img/lotus_temple.png" />
-      </div>
-      <div class="inner row-fluid">
-        <ul class="span3 offset1">
-          <li class="heading">Resources</li>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-        <ul class="span3">
-          <li class="heading">Resources</li>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-        <ul class="span3">
-          <li class="heading">Resources</li>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-        <ul class="span2">
-          <li class="heading">Resources</li>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-        <div class="clear"></div>
-        <div class="with_love">
-          Made with <a href="http://openlabs.github.io/natc-love"><i class="icon icon-heart"></i></a> at <a href="http://openlabs.co.in">Openlabs</a>
+      <footer style="background: #fff;">
+        <div class="bar">
+          <img src="img/lotus_temple.png" />
         </div>
-      </div>
-    </footer>
+        <div class="inner row-fluid">
+          <div class="links">
+            <a href="">NASSCOM</a>
+            <a href="">Schedule</a>
+            <a href="">Speakers</a>
+            <a href="">Sponsors</a>
+            <a href="venue.html">Venue</a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">FAQs</a>
+          </div>
+          <div class="clear"></div>
+          <div class="with_love">
+            Made with <a href="http://openlabs.github.io/natc-love"><i class="icon icon-heart"></i></a> by <a href="http://openlabs.co.in">Team Openlabs</a>
+          </div>
+        </div>
+      </footer>
     <!-- Le javascript
       ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
