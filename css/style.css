@@ -18,6 +18,9 @@ h1, h2, h3, h4, h5, h6 {
 .flexslider{
     border: none;
 }
+a.red{
+    color: #E74C3C;
+}
 /*  Nasscom buttons
 --------------------------*/
 
@@ -202,7 +205,6 @@ text-align: center;
 z-index: 100;
 padding-bottom: 20px;
 top: 0;
-background: url('../img/banner.png') center no-repeat;
 }
 
 .logo, .nasscom-logo {
