@@ -12,7 +12,9 @@ h1, h2, h3, h4, h5, h6 {
 .center{
     text-align: center;
 }
-
+.content-top{
+    margin-top: 5.2em;
+}
 /*  Nasscom buttons
 --------------------------*/
 
@@ -124,6 +126,7 @@ a.menu-link,a.menu-link:visited {
 .top-logo {
     /*position:absolute;*/
     top:0;
+    left: 10%
     /*background: #E74C3C;
     border-radius:0 0 6px 6px;
     box-shadow:0 0 4px #000;*/
@@ -133,7 +136,6 @@ a.menu-link,a.menu-link:visited {
     font-weight:700;
     font-size:1.5em;
     line-height:1.2;
-    vertical-align: middle;
     width:180px;
     display:inline-block;
     -webkit-transform: scale(1); display: inline-block;
@@ -167,8 +169,7 @@ text-align: center;
 z-index: 100;
 padding-bottom: 20px;
 top: 0;
-background: url('../img/banner.png') center no-repeat; #efefef;
-border-bottom: 2px solid #EFF8FB;
+background: url('../img/banner.png') center no-repeat;
 }
 
 .logo, .nasscom-logo {
@@ -202,13 +203,19 @@ display: block;
 font-weight:300;
 font-size: 25px;
 }
+.flexslider{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
 
+}
 
 /*  Speakers
 --------------------------*/
 .speakers, .why-attend, .blog, .sponsors{
-    padding:40px 0; 
-    border-bottom: 2px solid #EFF8FB;
+    padding:3em 0; 
+    border-bottom: 1px solid #E6E6E6;
 }
 .speakers h2, .why-attend h2, .blog h2, .sponsors h2, h2.main-heading {
     padding-bottom: 30px;
@@ -429,7 +436,7 @@ opacity: 1;
 ---------------- */
 .sidebar{
     color: #000;
-    padding-top: 90px;
+    padding-top:5.1em;
     background:#fff;
 }
 .sidebar .nav a {
@@ -628,10 +635,8 @@ span.linedin-follow{
 text-decoration: underline;
 }
 
-
 /* Sponsors Images 
 ---------------------- */
-
 .sponsors-box img{
     -webkit-filter: grayscale(90%);
   -moz-filter: grayscale(90%);
@@ -692,4 +697,151 @@ footer li.heading{
     font-weight: bold;
     padding-bottom: 10px;
     color: #3498DB;
+}
+
+
+/* Venue Page */
+.days-weather li {
+    font-size: 20px;
+    padding-right:0 10px;
+    border-right:4px solid #eee;
+}
+ul.days-weather li:last-child{
+    border-right: none;
+}
+.days-weather li a{
+    color: #34495E;
+}
+.days-weather li a:hover{
+    color: #D35400;
+}
+.days-weather li a.active{
+color: #D35400;
+}
+
+/*-----About Page
+--------------------*/
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 310px;
+  height: 390px;
+  z-index: 1;
+}
+#f1_container {
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -o-perspective: 1000px;
+  perspective: 1000px;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 1.0s linear;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: all 1.0s linear;
+  -o-transform-style: preserve-3d;
+  -o-transition: all 1.0s linear;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card, #f1_container.hover_effect #f1_card {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+
+  -webkit-box-shadow: -5px 5px 5px #aaa;
+  -moz-box-shadow: -5px 5px 5px #aaa;
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.face img{
+    max-width: 310px;
+}
+.face.back {
+  display: block;
+  -webkit-transform: rotateY(180deg);
+  -webkit-box-sizing: border-box;
+  -moz-transform: rotateY(180deg);
+  -moz-box-sizing: border-box;
+  -o-transform: rotateY(180deg);
+  -o-box-sizing: border-box;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+.face.mobile{
+    background: #F1C40F;
+}
+.face.cloud{
+    background: #3498DB;
+}
+.face.bigdata{
+    background:#16A085;
+}
+
+
+#about-features ul{
+    list-style: none;
+}
+
+#about-features ul li{
+    padding: 10px;
+    min-width: 250px;
+    max-width: 250px;
+    height: 290px;
+    display: inline-block;
+
+}
+
+.fancy-container{
+    min-width: 250px;
+    height: 290px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    color: #fff;
+}
+.fancy-container h4{
+    padding: 20px 0  0 0;
+    font-size: 1.5em;
+}
+.fancy-container img{
+    padding: 10px 0;
+    height: 100px;
+}
+.fancy-container p{
+    font-size: 17px;
+}
+.fancy-container.developers{
+    background: #2980B9;
+}
+.fancy-container.investors{
+    background: #34495E
+}
+.fancy-container.medias{
+    background: #9B59B6
+}
+.fancy-container.students{
+    background: #E74C3C;
+}
+.fancy-container.startups{
+    background: #1ABC9C;
+}
+.fancy-container.business{
+    background: #F39C12;
+}
+#people-behind img{
+    width: 180px;
 }
