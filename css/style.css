@@ -248,7 +248,7 @@ font-size: 25px;
 
 /*  Speakers
 --------------------------*/
-.speakers, .why-attend, .blog, .sponsors{
+.speakers, .why-attend, .blog{
     padding:3em 0; 
     border-bottom: 1px solid #E6E6E6;
 }
@@ -259,7 +259,9 @@ font-size: 25px;
 .speakers-pic{
     padding: 30px 0;
 }
-
+ .sponsors{
+    padding:3em 0;
+}
 
 /*  Why attend  */
 
@@ -337,8 +339,58 @@ p.timestamp span{
 
 
 
-/*  Sponsors 
+/*  Sponsors Page
 --------------------------*/
+.sponsors-box ul li{
+    display: inline-block;
+    min-width: 245px;
+    max-width: 245px;
+    height: 272px;
+}
+.sponsors-container{
+    overflow: hidden;
+    min-width: 240px;
+    max-width: 240px;
+    height: 270px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    color: #fff;
+    background: #FAFAFA;
+}
+.sponsors-container .category-top{
+    background:#5882FA;
+    height: 40px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #FFFFFF;
+    border-bottom: 1px solid #D8D8D8;
+}
+.sponsors-container .image-box{
+    height: 170px;
+    background: #eee;
+    vertical-align: center;
+}
+.sponsors-container .image-box img{
+    vertical-align: middle;
+    padding: 10px;
+    width: 220px;
+    max-width: 220px;
+}
+.sponsors-container .sponsor-desc{
+    height: 58px;
+    background: #fff;
+}
+.image-align{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.image-align img{
+    vertical-align: middle;
+}
+.muted-text{
+color: #BDBDBD;
+}
 
 #sponsors-img{
     padding: 30px 0;
@@ -643,6 +695,22 @@ a.linkedin{
     padding: 10px;
 }
 
+.sponsors-image-box, .sponsors-image-box2, .sponsors-image-box3{
+    padding: 40px 0;
+}
+
+.sponsors-image-box2 img{
+    width: 165px;
+}
+.sponsors-image-box3 img{
+    width: 120px;
+}
+.sponsors-image-box4{
+    padding-bottom: 40px;
+}
+.sponsors-image-box4 img{
+    width: 120px;
+}
 .border{
     background: url(../img/section-bg.jpg) no-repeat center bottom;
 }
@@ -666,29 +734,6 @@ span.linedin-follow{
 .filter-speaker li a:hover{
 text-decoration: underline;
 }
-
-/* Sponsors Images 
----------------------- */
-.sponsors-box img{
-    -webkit-filter: grayscale(90%);
-    -moz-filter: grayscale(90%);
-    -ms-filter: grayscale(90%);
-    -o-filter: grayscale(90%);
-    filter: grayscale(90%);
-    filter: gray;
-    -webkit-transition: all 1s ease-in;
-    -moz-transition: all 1s ease-in;
-    -o-transition: all 1s ease-in;
-    transition: all 1s ease-in;
-    opacity: 0.6;
-}
-.sponsors-box img:hover{
--webkit-filter: grayscale(0%);
-filter: none;
-opacity: 1;
-}
-
-
 
 /* FOOTER
 ---------------------- */
@@ -845,7 +890,6 @@ color: #D35400;
     max-width: 250px;
     height: 290px;
     display: inline-block;
-
 }
 
 .fancy-container{
