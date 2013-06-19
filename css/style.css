@@ -887,3 +887,32 @@ color: #D35400;
 #people-behind img{
     width: 180px;
 }
+
+/*     NEWS POSTS
+------------------------- */
+
+.news-wrapper{
+    padding: 1.5em 3em;
+}
+.news-wrapper .icon{
+    /*background: #222;*/
+    color: #222;
+    border-radius: .1em;
+    padding: .1em;
+    font-size:6em;
+}
+.news-date{
+    color: #999;
+    border-bottom: #999 solid .1em;
+    padding-bottom: .3em;
+    margin-bottom: 2.5em;
+}
+.news-wrapper .row-fluid{
+    margin-bottom: 2.5em;
+}
+.news-event p{
+    color: #666;
+}
+.news-event h4{
+    color: #333;
+}
