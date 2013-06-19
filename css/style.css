@@ -595,46 +595,64 @@ opacity: 1
 }
 #schedule-table thead tr :first-child{
     font-size: 17px;
-    min-width: 320px;
-    max-width: 320px;
-
+    min-width: 210px;
+    max-width: 210px;
 }
 #schedule-table thead tr th{
     text-align: center;
 }
 #schedule-table thead tr th{
-    max-width: 60px;
-    min-width: 60px;
-} 
-#schedule-table tbody tr td{
-    text-align: center;
+    max-width: 70px;
+    min-width: 70px;
 }
 #schedule-table .media{
     float: left;
 }
 #schedule-table .media img{
-    margin-right: 10px;
     width: 50px;
+    vertical-align: middle;
     border: 2px solid #FFFFFF;
     border-radius: 50%;
     text-align: center;
 }
-.cloud_color:hover, .bigdata_color, .mobile_color{
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    z-index: 9999;
+.label-light{
+    background: #fff;
+    color: #2C3E50;
+}
+td.bigdata_colo, td.mobile_color, td.cloud_color, td.workshop_color{
+    font-size: 14px;
+}
+
+.bigdata_color .media, .mobile_color .media, .cloud_color .media, .workshop_color .media{
+    padding-right: 40px;
+    overflow:hidden;
+}
+
+
+.bigdata_color, .mobile_color, .cloud_color, .workshop_color{
+    -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  overflow: none;
+}
+#schedule-table tbody td{
+    max-height: 87px;
+}
+tbody tr td.media{
+    max-height: 70px;
+}
+.panel_discussion{
+    background: #34495E url(../img/discussion_bg.png) no-repeat 97% 50%;
 }
 .bigdata_color{
-    background: #F5DA81 url(../img/bigdata_bg.png) no-repeat 97% 50%;
+    background: #FFB849 url(../img/hadoop_logo.png) no-repeat 97% 50%;
 }
 .mobile_color{
     background: #9B59B6 url(../img/mobile_bg.png) no-repeat 95% 50%;
 }
 .cloud_color{
     background: #3498DB url(../img/cloud_bg.png) no-repeat 97% 50%;
-    box-shadow: 
-
 }
 .workshop_color{
     background: #E74C3C url(../img/workshop_bg.png) no-repeat 97% 50%;
@@ -642,13 +660,11 @@ opacity: 1
 td .media-body{
     color: white;
 }
-
 h4.table-speaker{
     color: #34495E;
     font-size: 17px;
     margin-left: -10px;
 }
-
 
 #schedule-table img{
     width: 100px;
