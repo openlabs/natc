@@ -18,6 +18,9 @@ h1, h2, h3, h4, h5, h6 {
 .flexslider{
     border: none;
 }
+a.red{
+    color: #E74C3C;
+}
 /*  Nasscom buttons
 --------------------------*/
 
@@ -470,7 +473,7 @@ opacity: 1
 }
 .sidebar .nav a {
   display: block;
-  padding: 0.8em;   
+  padding: 0.1em 0.8em;
   color: #000;
   border-bottom: 1px solid #333;
   text-transform:uppercase;
