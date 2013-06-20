@@ -588,27 +588,27 @@ opacity: 1
     color:#34495e;
     font-size: 18px;
 }
-#schedule-table thead {
+.schedule-table thead {
     background: #2C3E50;
     font-size: 13px;
     color: #FFFFFF;
 }
-#schedule-table thead tr :first-child{
+.schedule-table thead tr :first-child{
     font-size: 17px;
     min-width: 210px;
     max-width: 210px;
 }
-#schedule-table thead tr th{
+.schedule-table thead tr th{
     text-align: center;
 }
-#schedule-table thead tr th{
+.schedule-table thead tr th{
     max-width: 70px;
     min-width: 70px;
 }
-#schedule-table .media{
+.schedule-table .media{
     float: left;
 }
-#schedule-table .media img{
+.schedule-table .media img{
     width: 50px;
     vertical-align: middle;
     border: 2px solid #FFFFFF;
@@ -636,7 +636,7 @@ td.bigdata_colo, td.mobile_color, td.cloud_color, td.workshop_color{
   transition: all .3s ease-in-out;
   overflow: none;
 }
-#schedule-table tbody td{
+.schedule-table tbody td{
     max-height: 87px;
 }
 tbody tr td.media{
@@ -666,7 +666,7 @@ h4.table-speaker{
     margin-left: -10px;
 }
 
-#schedule-table img{
+.schedule-table img{
     width: 100px;
     float: left;
 }
