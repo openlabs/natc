@@ -341,8 +341,7 @@ p.timestamp span{
 
 .rotator{
     width: 220px;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    text-align: center;
 }
 .rotator a{
     position: absolute;
