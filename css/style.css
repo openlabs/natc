@@ -337,7 +337,23 @@ p.timestamp span{
     background: url(../img/time.png) center left no-repeat;
 }
 
+/* Footer sponsors image  change */
 
+.rotator{
+    width: 220px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.rotator a{
+    position: absolute;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.rotator a img{
+    text-align: center;
+}
 
 /*  Sponsors Page
 --------------------------*/

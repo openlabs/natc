@@ -292,23 +292,41 @@
               <img src="img/sponsors/adobe.png">             
             </div>
             <div class="span3">
-              <img src="img/sponsors/pivotal-labs.png">             
+              <img src="img/sponsors/openlabslogo.png" />
             </div>
           </div>
-          <div class="row-fluid" id="sponsors-img">
+          <div class="row-fluid  center" id="sponsors-img">
             <div class="span3">
-              <img src="img/sponsors/inmobi-logo.png">             
+              <div class="rotator">
+                <a href="" style="display: block;"><img src="img/sponsors/google.png" /></a>
+                <a href="" style="display: none;"><img src="img/sponsors/pivotal-labs.png"></a>             
+                <a href="" style="display: none;"><img src="img/sponsors/amazon.png" /></a>
+              </div>    
             </div>
             <div class="span3">
-              <img src="img/sponsors/bitly.png">             
+              <div class="rotator">
+                <a href="" style="display:block;"><img src="img/sponsors/amazon.png" /></a>
+                <a href="" style="display: none;"><img src="img/sponsors/google.png" /></a>
+                <a href="" style="display: none;"><img src="img/sponsors/pivotal-labs.png"></a>             
+                
+              </div>    
             </div>
             <div class="span3">
-              <img src="img/sponsors/openlabslogo.png">             
+              <div class="rotator">
+                <a href="" style="display: block;"><img src="img/sponsors/pivotal-labs.png"></a> 
+                <a href="" style="display: none;"><img src="img/sponsors/google.png" /></a>
+                <a href="" style="display: none;"><img src="img/sponsors/amazon.png" /></a>
+              </div>    
             </div>
             <div class="span3">
-              <img src="img/sponsors/cloudera.png">             
+              <div class="rotator">
+                <a href="" style="display: block;"><img src="img/sponsors/google.png" /></a>
+                <a href="" style="display: none;"><img src="img/sponsors/amazon.png" /></a>
+              </div>    
             </div>
           </div>
+        </div>
+        <div class="center content-top">
           For sponsorship opportunities, please email at <a class="red" href="mailto:shruti@nasscom.in">shruti@nasscom.in</a>
         </div>
       </section>
@@ -331,7 +349,7 @@
           <div class="clear"></div>
           <div class="with_love">
             Made with <a href="http://openlabs.github.io/natc-love"><i class="icon icon-heart"></i></a> by <a href="http://openlabs.co.in">Team Openlabs</a>
-          </div>
+          </div`>
         </div>
       </footer>
     <!-- Le javascript
@@ -380,13 +398,11 @@
             if (front) {
                 $(this).parent().find('div.front').show();
                 $(this).parent().find('div.back').hide();
-      
             } else {
                 $(this).parent().find('div.front').hide();
                 $(this).parent().find('div.back').show();
             }
         }
-      
         $('.speakers-pic > .span3').hover(
             function () {
                 $(this).find('div').stop().rotate3Di('flip', 250, {direction: 'clockwise', sideChange: mySideChange});
@@ -420,6 +436,38 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-12853548-7', 'openlabs.github.io');
       ga('send', 'pageview');
+    </script>
+    <script>
+    $(function(){
+      // time between image rotate
+      $(".rotator").each(function(){
+        var imgs = $(this).find("a");
+        var max_count = imgs.length;
+        var index_count = 0;
+        imgs.show().hide();
+        imgs.each(function(index, value){
+          if (index == index_count){
+            $(this).fadeIn(1000);
+          }
+        });
+        index_count++;
+        if(index_count == max_count){
+          index_count = 0;
+        }
+        setInterval(function(){
+          imgs.hide();
+          imgs.each(function(index, value){
+            if (index == index_count){
+              $(this).fadeIn(1000);
+            }
+          });
+          index_count++;
+          if(index_count == max_count){
+            index_count = 0;
+          }
+        }, Math.floor((Math.random()*3000)+5000));
+      });
+    });
     </script>
   </body>
 </html>
