@@ -887,6 +887,12 @@ footer .links a:hover{
 
 
 /* Venue Page */
+.venue  .media{
+    margin-top: 10px;
+}
+.venue  .media p img{
+    width: 200px;
+}
 .days-weather li {
     font-size: 20px;
     padding-right:0 10px;
