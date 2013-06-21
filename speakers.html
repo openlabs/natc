@@ -65,100 +65,226 @@
           <div class="container">
             <h2 class="main-heading center clearfix">
                 <span>Meet our Speakers</span>
-              </h2>
-              <div class="row-fluid center">
-                <ul class="inline filter-speaker">
-                  <li><a href="">All </a></li>
-                  <li><span class="muted">/</span></li>
-                  <li><a href="">Keynote</a></li>
-                </ul>
-              </div>
-            <div class="row-fluid ">
-              <div class="media border">
-                <p href="" class="pull-left">
-                  <img class="media-object" src="img/speakers/mark.png">
-                </p>
-                <div class="media-body">
-                  <h3>Speaker's Name </h3>
-                  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus</p>
-                  <span class="twitter-follow">
-                    <a href="https://twitter.com/openlabsindia" class="twitter-follow-button" data-show-count="false">Follow @openlabsindia</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-                    </script>
-                  </span>
-                  <span class="linedin-follow">
-                    <script src="//platform.linkedin.com/in.js" type="text/javascript">
-                      lang: en_US
-                    </script>
-                    <script type="IN/FollowCompany" data-id="453921" data-counter="none"></script>
-                  </span>
-                  <h5 class="sessions">Seesions :</h5>
-                  <ul class="session-list">
-                    <li><a href="">Bigdata: Lorem Ipsum session title</a></li>
-                    <li><a href="">Bigdata: Lorem Ipsum session title</a></li>
-                  </ul>
-                </div>
-
-              </div>
-              <div class="media border">
-                <p href="" class="pull-left">
-                  <img class="media-object" src="img/speakers/werner.png">
-                </p>
-                <div class="media-body">
-                  <h3>Speaker's Name </h3>
-                  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus</p>
-                  <span class="twitter-follow">
-                    <a href="https://twitter.com/openlabsindia" class="twitter-follow-button" data-show-count="false">Follow @openlabsindia</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-                    </script>
-                  </span>
-                  <span class="linedin-follow">
-                    <script src="//platform.linkedin.com/in.js" type="text/javascript">
-                      lang: en_US
-                    </script>
-                    <script type="IN/FollowCompany" data-id="453921" data-counter="none"></script>
-                  </span>
-                  <h5 class="sessions">Seesions :</h5>
-                  <ul class="session-list">
-                    <li><a href="">Bigdata: Lorem Ipsum session title</a></li>
-                    <li><a href="">Bigdata: Lorem Ipsum session title</a></li>
-                  </ul>
-                </div>
-
-              </div>
-              <div class="media ">
-                <p href="" class="pull-left">
-                  <img class="media-object" src="img/speakers/werner.png">
-                </p>
-                <div class="media-body">
-                  <h3>Speaker's Name </h3>
-                  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus</p>
-                  <span class="twitter-follow">
-                    <a href="https://twitter.com/openlabsindia" class="twitter-follow-button" data-show-count="false">Follow @openlabsindia</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-                    </script>
-                  </span>
-                  <span class="linedin-follow">
-                    <script src="//platform.linkedin.com/in.js" type="text/javascript">
-                      lang: en_US
-                    </script>
-                    <script type="IN/FollowCompany" data-id="453921" data-counter="none"></script>
-                  </span>
-                  <h5 class="sessions">Seesions :</h5>
-                  <ul class="session-list">
-                    <li><a href="">Bigdata: Lorem Ipsum session title</a></li>
-                    <li><a href="">Bigdata: Lorem Ipsum session title</a></li>
-                  </ul>
-                </div>
-
-              </div>
+            </h2>
+            <div class="row-fluid center">
+              <ul class="inline filter-speaker">
+                <li><a href="">All </a></li>
+                <li><span class="muted">/</span></li>
+                <li><a href="">Keynote</a></li>
+              </ul>
+            </div>
+            <div class="row-fluid">
+              <ul id="tiles">
+                <li>
+                  <div class="list">
+                    <img src="img/speakers/square/werner.jpg">
+                    <h4 class="center">Dr Werner Vogels<span class="muted">Amazon</span></h4>
+                    <div class="social center">
+                      <a href="" >
+                        <i class="icon-facebook icon-2"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-twitter"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list">
+                    <img src="img/speakers/square/doug.jpg">
+                    <h4 class="center">Doug Cutting<span class="muted">Cloudera </span></h4>
+                    <div class="social center">
+                      <a href="" >
+                        <i class="icon-facebook icon-2"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-twitter"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list">
+                    <img src="img/speakers/square/hilary.jpg">
+                    <h4 class="center">Hilary Masonbitly<span class="muted">Cloudera </span></h4>
+                    <div class="social center">
+                      <a href="" >
+                        <i class="icon-facebook icon-2"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-twitter"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list">
+                    <img src="img/speakers/square/sundar.jpg">
+                    <h4 class="center">Sundar<span class="muted">Google</span></h4>
+                    <div class="social center">
+                      <a href="" >
+                        <i class="icon-facebook icon-2"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-twitter"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list">
+                    <img src="img/speakers/square/ngupta.jpg">
+                    <h4 class="center">Naresh Gupta<span class="muted">Adobe </span></h4>
+                    <div class="social center">
+                      <a href="" >
+                        <i class="icon-facebook icon-2"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-twitter"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list">
+                    <img src="img/speakers/square/guido.jpg">
+                    <h4 class="center">Guido Von rossum<span class="muted">Dropbox/Google </span></h4>
+                    <div class="social center">
+                      <a href="" >
+                        <i class="icon-facebook icon-2"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-twitter"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list">
+                    <img src="img/speakers/square/milind.jpg">
+                    <h4 class="center">Doug Cutting<span class="muted">Cloudera </span></h4>
+                    <div class="social center">
+                      <a href="" >
+                        <i class="icon-facebook icon-2"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-twitter"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list">
+                    <img src="img/speakers/square/naveen.jpeg">
+                    <h4 class="center">Milind Bhandarkar<span class="muted">Pivotal </span></h4>
+                    <div class="social center">
+                      <a href="" >
+                        <i class="icon-facebook icon-2"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-twitter"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list">
+                    <img src="img/speakers/square/mark.jpg">
+                    <h4 class="center">Mark Zuckerberg<span class="muted">Facebook</span></h4>
+                    <div class="social center">
+                      <a href="" >
+                        <i class="icon-facebook icon-2"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-twitter"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list">
+                    <img src="img/speakers/square/bill.jpg">
+                    <h4 class="center">Bill Gates<span class="muted">Microsoft</span></h4>
+                    <div class="social center">
+                      <a href="" >
+                        <i class="icon-facebook icon-2"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-twitter"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list">
+                    <img src="img/speakers/square/larry.jpg">
+                    <h4 class="center">Larry Page<span class="muted">Google</span></h4>
+                    <div class="social center">
+                      <a href="" >
+                        <i class="icon-facebook icon-2"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-twitter"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list">
+                    <img src="img/speakers/square/sharoon.png">
+                    <h4 class="center">Sharoon Thomas<span class="muted">Openlabs Technologies </span></h4>
+                    <div class="social center">
+                      <a href="" >
+                        <i class="icon-facebook icon-2"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-twitter"></i>
+                      </a>
+                      <a href="" >
+                        <i class="icon-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
             <div class="center">
               To submit a proposal, please email at <a class="red" href="mailto:shruti@nasscom.in">shruti@nasscom.in</a>.
             </div>
-
           </div>
-
         </section>
       </div>
       <footer style="background: #fff;">
@@ -187,25 +313,19 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js" type="text/javascript"></script>
-    <script type="text/javascript" charset="utf-8">
-      getTwitters('tweets', {
-        id: 'openlabsindia',
-        count: 1,
-        enableLinks: true,
-        ignoreReplies: true,
-        clearContents: true,
-        template: '<div class="recent-tweet"><p>%text%</p></div><p class="timestamp"><span><a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/">%time%</a></span></p>'
-      });
-    </script>
-    <script src="js/app.js"></script>
+    <script src="js/app.js"></script>    
     <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.wookmark.js"></script>
     <script>
-      $(document).ready(
-        function() { 
-        $("html").niceScroll({cursorcolor:"#C0392B", zindex:9999});
-          }
-        );
+      $(document).ready(new function() {
+        // Call the layout function.
+        $('#tiles li').wookmark({
+          autoResize: true, // This will auto-update the layout when the browser window is resized.
+          container: $('#tiles'), // Optional, used for some extra CSS styling
+          offset: 12, // Optional, the distance between grid items
+          itemWidth: 210 // Optional, the width of a grid item
+        });
+      });
     </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -354,6 +354,8 @@ p.timestamp span{
     text-align: center;
 }
 
+
+
 /*  Sponsors Page
 --------------------------*/
 .sponsors-box ul li{
@@ -685,7 +687,7 @@ h4.table-speaker{
     width: 100px;
     float: left;
 }
-a.social-icons{
+a.social-icons, a.social-icons{
     margin-top: 10px;
     display: inline-block;
     height: 25px;
@@ -765,7 +767,72 @@ span.linedin-follow{
 .filter-speaker li a:hover{
 text-decoration: underline;
 }
+.list{
+    width: 200px;
+    webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+    -moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+    -ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+    -o-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+    transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+ }
 
+.list h4{
+    margin:  5px 10px 5px 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+.list h4 span{
+    display: block;
+    font-size: 14px;
+}
+#tiles {
+    list-style: none;
+list-style-type: none;
+position: relative;
+margin: 0;
+}
+
+#tiles li {
+width: 200px;
+background-color: #ffffff;
+border: 1px solid #dedede;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+display: none;
+cursor: pointer;
+padding:5px;
+webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+-moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+-ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+-o-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+}
+ul#tiles li > div > img {
+    display: block;
+}
+.social{
+    margin-bottom: 5px;
+}
+.social a{
+    line-height: 25px;
+    margin:0 5px; 
+}
+.social .icon-facebook, .social .icon-twitter, .social .icon-linkedin{
+    color: #848484;
+}
+.social .icon-facebook:hover{
+    color: #3B5998;
+}
+.social .icon-twitter:hover{
+    color: #9AE4E8;
+}
+.social .icon-linkedin:hover{
+    color: #0e76a8;
+}
 /* FOOTER
 ---------------------- */
 footer div.bar{
