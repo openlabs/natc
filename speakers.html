@@ -90,6 +90,7 @@
               </ul>
             </div>
             <div class="row-fluid" id="speaker-scroll">
+              <div id="loaderCircle"></div>
               <ul id="tiles">
                 <li data-filter-class='["keynote", "all"]'>
                   <div class="list">
@@ -336,6 +337,7 @@
     (function ($){
       $('#tiles').imagesLoaded(function() {
         // Prepare layout options.
+        $('#loaderCircle').hide();
         var options = {
           autoResize: true, // This will auto-update the layout when the browser window is resized.
           container: $('#tiles'), // Optional, used for some extra CSS styling
