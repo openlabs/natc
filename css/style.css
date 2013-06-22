@@ -744,12 +744,24 @@ span.linedin-follow{
     color: #2C3E50;
     font-size: 14px;
 }
-.filter-speaker li, .filter-speaker li a{
+#filters li{
+    margin: 5px;
     color:#E74C3C;
-    font-size:18px;
+    padding:2px 5px;
+    border-radius: 4px;
+    font-size:16px;
     font-weight: 500;
     margin-bottom: 20px;
 }
+#filters li:hover {
+  background: #95A5A6;
+  color: #fff;
+}
+#filters li.active{
+    background-color: #E74C3C;
+    color: #fff;
+}
+
 .filter-speaker li a:hover{
 text-decoration: underline;
 }
@@ -779,6 +791,10 @@ text-decoration: underline;
 list-style-type: none;
 position: relative;
 margin: 0;
+}
+#tiles li.inactive {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #tiles li {
