@@ -895,6 +895,13 @@ footer .links a:hover{
 
 
 /* Venue Page */
+#nearby-hotels img{
+    margin: 10px 0;
+    width: 100px;
+}
+#nearby-hotels p{
+    font-size: 16px;
+}
 .venue  .media{
     margin-top: 10px;
 }
