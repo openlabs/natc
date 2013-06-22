@@ -47,7 +47,11 @@ background-color: #27AE60;
 }
 /*  TOP NAVIGATION
 --------------------------*/
-
+h1.brand{
+    float:left;
+    width:140px;
+    margin: 5px 20px 0 0;
+}
 .top-bar {
     background:url(../img/bk_nav.png) 0 100%;
     text-align: center;
@@ -58,42 +62,31 @@ background-color: #27AE60;
     z-index:103;
     width:100%;
 }
-
-nav.mobile-menu{
-    display:none;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-
+.top-bar  nav {
+float: right;
 }
-
-nav.nav-left {
-    position:absolute;
-    right:50%;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-    top:0;
+nav ul.nav-top {
+margin: 10px 0  10px;
 }
-
-nav.nav-right {
-    position:absolute;
-    left:50%;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-    top:0;
+nav ul.nav-top li{
+    line-height: 24px;
 }
-
-nav ul {
-    padding:20px 0 0 0;
+div.main_nav{
+    clear: right;
+    float: right;
 }
-
+nav ul.nav-top a{
+    font-size: 20px;
+}
+nav ul.nav-main {
+margin: 5px 10px 20px 0;
+display: block;
+clear: right;
+}
 nav ul li {
     display:inline-block;
     text-align:center;
 }
-
 nav ul li > a{
     display: inline-block;
     padding:0 16px;
@@ -107,43 +100,25 @@ nav ul li > a{
 nav ul li > a:hover{
     color: #E74C3C;
 }
- 
-nav ul li > .top-top-bar{
-    color: #fff;
-    position: absolute;
-    margin-top: -50px;
-    width: 357px;
-    margin-left: -373px;
-    text-align: right;
-    padding-right: 100px;
-}
- 
-nav ul li > .top-top-bar a{
-    display: inline-block;
-    color: #fff;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    font-size: 1em;
-    padding-left: .6em;
-}
- 
-nav ul li > a.register-btn{
-    font-size: 16px;
-    padding: 8px 15px;
-    font-weight: bold;
-    background: #E74C3C;
-    border-radius: 4px;
-    margin-left: 10px;
-    color: #fff;
-    text-transform: none;
-}
- 
-nav ul li > .top-top-bar a:hover{
-    color: #E74C3C;
-}
 
+.top-bar a.register-button{
+float: right;
+padding: 5px 15px;
+margin:0 10px;
+background: #E74C3C;
+position: relative;
+color: #fff;
+font-weight: 400;
+border-radius: 2px;
+text-shadow: 2px 2px 0 rgba(0,0,0,0.07);
+}
+nav.mobile-menu{
+    display:none;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+
+}
 .nav-margin{
     width: 200px;
 }
@@ -166,7 +141,12 @@ nav a:hover {
     text-decoration:none;
     opacity:1;
 }
-
+.natc-brand{
+    margin: 10px 10px;
+    position: relative;
+    color: #fff;
+    z-index: 1000;
+}
 a.menu-link {
     display:none;
     position:relative;
@@ -176,24 +156,10 @@ a.menu-link {
     font-weight:700;
     padding:0.7em 1em;
 }
-
 a.menu-link,a.menu-link:visited {
     text-decoration:none;
 }
 
-.top-logo {
-    display:inline-block;
-    text-align: left;
-    width: 95px;
-    opacity:1;
-}
-
-.top-logo img{
-    position: fixed;
-    height: 100px;
-    width: 100px;
-    margin-top: -60px;
-}
 
 /*  HEADER BANNER
 --------------------------*/
@@ -248,6 +214,12 @@ font-size: 25px;
 
 /*  Speakers
 --------------------------*/
+#loaderCircle {
+  width: 16px;
+  height: 16px;
+  margin: 0 auto;
+  background-image: url('../img/loader.gif');
+}
 .speakers, .why-attend, .blog{
     padding:3em 0; 
     border-bottom: 1px solid #E6E6E6;
@@ -438,17 +410,25 @@ opacity: 1
 
     nav ul li {
         font-size:0.9em;
-        padding:0 19px;
+    }
+    nav ul li > a{
+        padding: 0 8px;
+    }
+    h1.brand{
+        width: 120px;
+        margin: 5px 5px 0 0px;
     }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 767px) {
 
     .top-bar{
-        position:absolute;
+        position:fixed;
         height:45px;
     }
-
+    nav ul.nav-main li{
+        padding: 5px 5px;
+    }
 
     .logo {
         margin-bottom:50px;
@@ -470,8 +450,13 @@ opacity: 1
       display:block;
       clear: both;
       overflow: hidden;
-      background:#111;
+      background:#373435;
       box-shadow:1px 0 3px #ccc;
+      z-index: 109;
+      -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
     }
     .js nav.mobile-menu {
       width: 15em;
