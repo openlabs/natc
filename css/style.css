@@ -219,6 +219,7 @@ font-size: 25px;
   height: 16px;
   margin: 0 auto;
   background-image: url('../img/loader.gif');
+  padding: 2em 0;
 }
 .speakers, .why-attend, .blog{
     padding:3em 0; 
@@ -326,7 +327,13 @@ p.timestamp span{
 .rotator a img{
     text-align: center;
 }
-
+footer{
+    clear: both;
+ position: relative;
+ z-index: 10;
+ height: 3em;
+ margin-top: -3em;
+}
 
 
 /*  Sponsors Page
