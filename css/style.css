@@ -261,6 +261,11 @@ font-size: 25px;
 .speakers-pic{
     padding: 30px 0;
 }
+.speakers-pic img{
+opacity:0.6;
+filter:alpha(opacity=60); /* For IE8 and earlier */
+margin-bottom: 1em;
+}
  .sponsors{
     padding:3em 0;
 }
