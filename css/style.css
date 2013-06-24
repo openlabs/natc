@@ -214,12 +214,14 @@ font-size: 25px;
 
 /*  Speakers
 --------------------------*/
+.call_for_proposal{
+    margin-top:3em;
+}
 #loaderCircle {
-  width: 16px;
-  height: 16px;
+  width: 30px;
+  height: 30px;
   margin: 0 auto;
   background-image: url('../img/loader.gif');
-  padding: 2em 0;
 }
 .speakers, .why-attend, .blog{
     padding:3em 0; 
