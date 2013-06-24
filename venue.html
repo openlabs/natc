@@ -87,10 +87,10 @@
               <div class="clear"></div><br>
             </div>
             <div class="nav">
-              <a href="#venue" class="smooth-scroll"><img src="icon/appbar.directions.png" width="40" />Explore</a>
+              <a href="#explore" class="smooth-scroll"><img src="icon/appbar.directions.png" width="40" />Explore</a>
               <a href="#hotel" class="smooth-scroll"><img src="icon/appbar.home.png" width="40" />Nearby Hotels</a>
               <a href="#travel_guide" class="smooth-scroll"><img src="icon/appbar.map.location.png" width="40" />Travel Guide</a>
-              <a href="#location" class="smooth-scroll"><img src="icon/appbar.man.walk.png" width="40" />Venue Directions</a>
+              <a href="#venue" class="smooth-scroll"><img src="icon/appbar.man.walk.png" width="40" />Venue Directions</a>
             </div>
           </div>
           <div class="span9 pull-right">
@@ -121,7 +121,7 @@
             <div class="clear"></div>
             <section class="why-attend">
               <div class="row-fluid venue">
-                <h1 id="venue">Explore </h1>
+                <h1 id="explore">Explore </h1>
                 <p>Noida is situated across the banks of Yamuna river and is away from the hectic lifestyle of Delhi. Noida is deemed to feature the best roads in the NCR region along with a variety of fine restaurants, shopping avenues, pubs and hangout zones.</p>
                 <br>
                 <h3 id="hotel">Nearby Hotels</h3>
@@ -231,7 +231,7 @@
       $('.smooth-scroll').click(function(e){
         console.log(this.hash);
         e.preventDefault();
-        $('html, body').animate({ scrollTop: $(this.hash).offset().top-80 }, 500);
+        $('html, body').animate({ scrollTop: $(this.hash).offset().top-100 }, 500);
       });
     });
     </script>
