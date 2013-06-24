@@ -479,7 +479,8 @@
       $('.smooth-scroll').click(function(e){
         console.log(this.hash);
         e.preventDefault();
-        $('html, body').animate({ scrollTop: $(this.hash).offset().top-80 }, 500);
+        //$('html, body').animate({ scrollTop: $(this.hash).offset().top-80 }, 500);
+        $('html, body').animate({ scrollTop: $(window).scrollTop()+350 }, 500);
       });
       // time between image rotate
       $(".rotator").each(function(){
