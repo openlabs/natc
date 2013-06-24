@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'RobotoThin';
     src: url('../font/Roboto-Thin-webfont.eot');
@@ -192,11 +191,11 @@ a.menu-link,a.menu-link:visited {
 --------------------------*/
 
 header {
-padding-top: 50px;
+padding-top: 90px;
 width: 100%;
 text-align: center;
 z-index: 100;
-padding-bottom: 20px;
+padding-bottom: 0px;
 top: 0;
 }
 
@@ -1131,3 +1130,7 @@ color: #D35400;
 .news-event h4{
     color: #333;
 }
+/* Home Slider 
+------------------- */
+.flex-control-nav {width: 100%; position: absolute; bottom: 10px; text-align: center;}
+.flexslider {margin: 0 0 20px; }
