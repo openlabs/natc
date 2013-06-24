@@ -1143,24 +1143,23 @@ color: #D35400;
 .flex-control-nav {width: 100%; position: absolute; bottom: 10px; text-align: center;}
 .flexslider {margin: 0 0 20px; }
 .index-more a{
-    background: #E74C3C;
-    color: #FFF;
-    opacity: .5;
+    opacity: .8;
     display: inline-block;
     padding: 3px 5px;
-    border-radius: 100px 100px 0 0;
     font-size: 4em;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
+.smooth-scroll img{
+    height: 50px;
+}
 .index-more a:hover {
-    background: #C0392B;
     opacity: 1;
-    color: #FFF;
 }
 .more-btn {
+    text-align: right;
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -1172,4 +1171,32 @@ color: #D35400;
 }
 .accordion-group {
 border: none;
+}
+.down_arrow {
+transition: 600ms opacity ease;
+-webkit-transition: 600ms opacity ease;
+-moz-transition: 600ms opacity ease;
+-o-transition: 600ms opacity ease;
+-ms-transition: 600ms opacity ease;
+opacity: 0.9;
+filter: alpha(opacity=90);
+animation: arrow 0.8s infinite;
+-moz-animation: arrow 0.8s infinite;
+-webkit-animation: arrow 0.8s infinite;
+-o-animation: arrow 0.8s infinite;
+}
+.down_arrow {
+margin: 0 0px 0 0px;
+position: relative;
+transition: top 200ms ease;
+-webkit-transition: top 200ms ease;
+-moz-transition: top 200ms ease;
+-o-transition: top 200ms ease;
+-ms-transition: top 200ms ease;
+top: 0px;
+background-position: -120px 0;
+width: 40px;
+height: 40px;
+opacity: 0.5;
+filter: alpha(opacity=50);
 }
