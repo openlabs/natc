@@ -759,6 +759,10 @@ a.linkedin{
     max-width: 200px;
     padding: 10px;
 }
+.sponsors-box img,.sponsors-image-box img, .sponsors-image-box2 img, .sponsors-image-box3 img,  .sponsors-image-box4 img{
+    opacity:0.6;
+    filter:alpha(opacity=60); 
+}
 
 .sponsors-image-box, .sponsors-image-box2, .sponsors-image-box3{
     padding: 40px 0;
