@@ -218,8 +218,8 @@ font-size: 25px;
     margin-top:3em;
 }
 #loaderCircle {
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   margin: 0 auto;
   background-image: url('../img/loader.gif');
 }
@@ -1026,8 +1026,15 @@ color: #D35400;
     margin-right: 5px;
 }
 
-#people-behind img{
-    width: 180px;
+.people-behind img{
+    width: 140px;
+    border: 2px solid #E6E6E6;
+}
+.people-behind li {
+    margin: 20px;
+}
+.people-behind li h4{
+    margin-top: .5em;
 }
 .multi-columns{
     column-count:2;
