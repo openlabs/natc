@@ -93,8 +93,8 @@
           </ul>
         </div>
       </header>
-      <section class="more-btn center"><a class="index-more icon-circle-arrow-down" href="#start"></a></section>
-      <section class="speakers border">
+      <section class="more-btn center index-more"><a class="icon-circle-arrow-down smooth-scroll" href="#start"></a></section>
+      <section id="start" class="speakers border">
         <div class="container center">
           <div class="clock_wrapper hidden-phone">
             <div class="wrapper">
@@ -470,6 +470,11 @@
     </script>
     <script>
     $(function(){
+      $('.smooth-scroll').click(function(e){
+        console.log(this.hash);
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $(this.hash).offset().top-80 }, 500);
+      });
       // time between image rotate
       $(".rotator").each(function(){
         var imgs = $(this).find("a");

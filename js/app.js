@@ -14,6 +14,12 @@ $(document).ready(function(){
       $(".my-affix").css("position", "relative");
       $(window).on('resize scroll', function() {
         var scroll_top = $(window).scrollTop();
+        if (scroll_top > 300){
+            $("section.index-more").fadeOut();
+        }
+        else{
+            $("section.index-more").fadeIn();
+        }
         var sticky_offset_top = 0;
         var sticky_offset_bottom = 180;
         sticky_offset_bottom = $(document).height() - sticky_offset_bottom - $(".my-affix").height();

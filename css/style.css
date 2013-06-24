@@ -1134,16 +1134,22 @@ color: #D35400;
 ------------------- */
 .flex-control-nav {width: 100%; position: absolute; bottom: 10px; text-align: center;}
 .flexslider {margin: 0 0 20px; }
-.index-more {
+.index-more a{
     background: #E74C3C;
     color: #FFF;
+    opacity: .5;
     display: inline-block;
     padding: 3px 5px;
     border-radius: 100px 100px 0 0;
     font-size: 4em;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
-.index-more:hover {
+.index-more a:hover {
     background: #C0392B;
+    opacity: 1;
     color: #FFF;
 }
 .more-btn {
