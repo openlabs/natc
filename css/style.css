@@ -1134,3 +1134,21 @@ color: #D35400;
 ------------------- */
 .flex-control-nav {width: 100%; position: absolute; bottom: 10px; text-align: center;}
 .flexslider {margin: 0 0 20px; }
+.index-more {
+    background: #E74C3C;
+    color: #FFF;
+    display: inline-block;
+    padding: 3px 5px;
+    border-radius: 100px 100px 0 0;
+    font-size: 4em;
+}
+.index-more:hover {
+    background: #C0392B;
+    color: #FFF;
+}
+.more-btn {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 9999;
+}
