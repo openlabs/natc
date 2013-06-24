@@ -21,7 +21,7 @@ $(document).ready(function(){
             $("section.index-more").fadeIn();
         }
         var sticky_offset_top = 0;
-        var sticky_offset_bottom = 180;
+        var sticky_offset_bottom = 234;
         sticky_offset_bottom = $(document).height() - sticky_offset_bottom - $(".my-affix").height();
         console.log(sticky_offset_bottom);
         if (scroll_top > sticky_offset_top && scroll_top < sticky_offset_bottom ) {
