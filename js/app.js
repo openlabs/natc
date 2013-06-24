@@ -14,7 +14,7 @@ $(document).ready(function(){
       $(".my-affix").css("position", "relative");
       $(window).on('resize scroll', function() {
         var scroll_top = $(window).scrollTop();
-        if (scroll_top > 300){
+        if (scroll_top > 800){
             $("section.index-more").fadeOut();
         }
         else{
