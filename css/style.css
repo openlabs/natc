@@ -1158,3 +1158,10 @@ color: #D35400;
     width: 100%;
     z-index: 9999;
 }
+/* FaQ Page */
+ a.accordion-toggle{
+    color: #34495e;
+}
+.accordion-group {
+border: none;
+}
