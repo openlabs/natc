@@ -375,11 +375,6 @@
               </tbody>
             </table>
             </div>
-
-
-
-
-
           </div>
         </section>
       </div>
@@ -425,6 +420,8 @@
         function() { 
           $("html").niceScroll({cursorcolor:"#C0392B", zindex:9999});
           $(".filter_day a").click(function(){
+            $(".filter_day a").removeClass("active");
+            $(this).addClass('active');
             $(".day1, .day2").hide();
             $("." + $(this).data('hide')).fadeIn();
           });

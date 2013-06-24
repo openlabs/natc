@@ -608,6 +608,10 @@ opacity: 1
 
 /* Schedule Page
 ---------------------- */
+.nav > li > a:hover, .nav > li > a.active, .nav > li > a:hover, .nav > li > a.active{
+text-decoration: none;
+background-color: #eeeeee;
+}
 .day1, .day2{   
     padding-bottom: 3em;
 }
