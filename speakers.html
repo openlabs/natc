@@ -83,11 +83,66 @@
         <section class="zigzag-box" style="margin-top:5em;">
           <div class="container">
             <h2 class="main-heading center clearfix">
-                <span>Speakers</span>
+              <span>Meet Our Speakers</span>
             </h2>
-            <div class="center image-border">
-              <img src="img/behind_atc/avatar.png" class="img-circle" alt>
-            </div><br><br>
+            <div class="row-fluid center">
+              <ul class="inline filter-speaker" id="filters">
+                <li data-filter="all" title="All Speakers">All </li><span class="muted">/</span>
+                <li data-filter="keynote" title="Keynote Speakers">Keynote</li>
+              </ul>
+            </div>
+            <div class="row-fluid" id="speaker-scroll">
+              <div id="loaderCircle"></div>
+              <ul id="tiles">
+                <li data-filter-class='["keynote", "all"]'>
+                  <div class="list">
+                    <a href="#milind_bio" data-toggle="modal"><img src="img/speakers/milind.jpeg"></a>
+                    <!-- Speaker Bio-->
+                    <div id="milind_bio" class="modal hide fade bio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                          <span class="icon-stack">
+                            <i class="icon-circle icon-stack-base"></i>
+                            <i class="icon-remove icon-light"></i>
+                          </span>
+                        </button>
+                        <div class="bio_image">
+                          <div class="media">
+                          <img src="img/speakers/milind_square.jpg" class="img-circle pull-left">
+                            <div class="media-body">
+                              <h3 class="bio_heading">Milind Bhandarkar </h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                        <div class="social">
+                          <a href="https://twitter.com/techmilind" target="_blank">
+                            <i class="icon-twitter"></i>
+                          </a>
+                          <a href="https://www.linkedin.com/in/milindb" target="_blank">
+                            <i class="icon-linkedin"></i>
+                          </a>
+                        </div>
+                        <h5 class="heading_bio"><strong>Bio :</strong></h5>
+                        <p>Milind Bhandarkar was the founding member of the team at Yahoo! that took Apache Hadoop from 20-node prototype to datacenter-scale production system, and has been contributing and working with Hadoop since version 0.1.0. He started the Yahoo! Grid solutions team focused on training, consulting, and supporting hundreds of new migrants to Hadoop. Parallel programming languages and paradigms has been his area of focus for over 20 years, and his area of specialization for PhD (Computer Science) from University of Illinois at Urbana-Champaign. Previously, he has worked at the Center for Development of Advanced Computing (C-DAC), National Center for Supercomputing Applications (NCSA), Center for Simulation of Advanced Rockets, Siebel Systems, Pathscale Inc. (acquired by QLogic), Yahoo! and Linkedin. Currently, he is the Chief Scientist at Pivotal (formerly Greenplum, A Division of EMC).</p>
+                      </div>
+                    </div>
+                    <h4 class="center">Milind Bhandarkar
+                      <span class="muted"> Chief Scientist, Pivotal</span></h4>
+                    <div class="social center">
+                      <a href="https://twitter.com/techmilind" target="_blank">
+                        <i class="icon-twitter"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/milindb" target="_blank">
+                        <i class="icon-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <br><br>
             <p class="center">
                Become a speaker and inspire thousands of IT professionals by sharing your expertise and experience. Click below to become a speaker.
             </p>

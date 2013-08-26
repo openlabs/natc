@@ -266,8 +266,8 @@ font-size: 25px;
     padding: 30px 0;
 }
 .speakers-pic img{
-opacity:0.6;
-filter:alpha(opacity=60); /* For IE8 and earlier */
+opacity:0.8;
+filter:alpha(opacity=80); /* For IE8 and earlier */
 margin-bottom: 1em;
 }
  .sponsors{
@@ -822,9 +822,9 @@ span.linedin-follow{
 #filters li{
     margin: 5px;
     color:#E74C3C;
-    padding:2px 5px;
+    padding:3px 8px;
     border-radius: 4px;
-    font-size:16px;
+    font-size:14px;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -836,7 +836,6 @@ span.linedin-follow{
     background-color: #E74C3C;
     color: #fff;
 }
-
 .filter-speaker li a:hover{
 text-decoration: underline;
 }
@@ -850,16 +849,17 @@ text-decoration: underline;
  }
 
 .list h4{
-    margin:  5px 10px 5px 5px;
+    margin:  10px 10px 5px 5px;
     padding-bottom: 5px;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 17px;
+    font-weight: 600;
     border-bottom: 1px solid #eee;
     overflow: hidden;
 }
 .list h4 span{
     display: block;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 15px;
 }
 #tiles {
     list-style: none;
@@ -880,7 +880,6 @@ border: 1px solid #dedede;
 -webkit-border-radius: 2px;
 border-radius: 2px;
 display: none;
-cursor: pointer;
 padding:5px;
 webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 -moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
@@ -891,8 +890,55 @@ transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 ul#tiles li > div > img {
     display: block;
 }
-.social{
+
+/* Bio Modal */
+.bio_image {
+    overflow: visible;
+    position: relative;
+    margin-top: 35px;
+}
+.bio_heading{
+    color: #fff;
+    text-shadow: 1px 1px #6F6E6E;
+    padding-top: 10px;
+}
+.bio_image img{
+    margin-top: -20px;
+    border: 2px solid #eee;
+    max-width:100px; 
+}
+#milind_bio .modal-header{
+    height: 100px;
+    border-radius: 5px 5px 0 0;
+}
+#milind_bio .modal-body {
+    padding-left: 25px;
+}
+#milind_bio .modal-body p{
+    font-size: 15px;
+    letter-spacing: .5px;
+}
+#milind_bio .modal-body .social{
+    margin: -10px 0 0 20%;
+}
+.modal-header .close{
+    opacity: .5;
+    text-shadow:none;
+}
+.modal-header .close:hover{
+    opacity: .8;
+}
+.orange{
+    color: #E74C3C;
+}
+h5.heading_bio{
+    margin-top: 20px;
     margin-bottom: 5px;
+    text-transform: none;
+}
+#milind_bio .modal-header{
+    background-image: url(../img/speakers/speakers_bg/milind_bg.jpg);
+    background-size: cover;
 }
 .social a{
     line-height: 25px;
@@ -910,6 +956,7 @@ ul#tiles li > div > img {
 .social .icon-linkedin:hover{
     color: #0e76a8;
 }
+
 /* FOOTER
 ---------------------- */
 footer div.bar{
