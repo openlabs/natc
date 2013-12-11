@@ -1347,3 +1347,16 @@ a.special-offers{
 a.special-offers img{
    max-width: 210px;
 }
+.media img{
+    padding: 5px;
+}
+.media .well{
+    background: #fff;
+    border-radius: 2px;
+}
+.media a.media-link{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #E74C3C;
+}

@@ -14,7 +14,6 @@ $(document).ready(function(){
       $(".my-affix").css("position", "relative");
       $(window).on('resize scroll', function() {
         var scroll_top = $(window).scrollTop();
-        console.log($(document).height());
         if (scroll_top > $(document).height()-1000){
             $("section.index-more").fadeOut();
         }
@@ -24,7 +23,6 @@ $(document).ready(function(){
         var sticky_offset_top = 0;
         var sticky_offset_bottom = 234;
         sticky_offset_bottom = $(document).height() - sticky_offset_bottom - $(".my-affix").height();
-        console.log(sticky_offset_bottom);
         if (scroll_top > sticky_offset_top && scroll_top < sticky_offset_bottom ) {
             $(".my-affix").animate({top:scroll_top + "px"},{duration:500,queue:false});
         }
